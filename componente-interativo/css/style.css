@@ -84,6 +84,14 @@ p {
   margin-bottom: 30px;
   position: relative;
   cursor: pointer;
+  color: var(--medium-grey);
+  font-weight: 700;
+}
+
+.circles:hover {
+  transition: 0.3s;
+  background: var(--medium-grey);
+  color: var(--white);
 }
 
 .circles span {
@@ -92,8 +100,6 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--medium-grey);
-  font-weight: 700;
 }
 
 .btn {
@@ -108,4 +114,10 @@ p {
   padding: 15px 15px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  background: var(--white);
+  color: var(--orange);
 }
