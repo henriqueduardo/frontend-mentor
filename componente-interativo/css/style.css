@@ -126,3 +126,42 @@ p {
   background: var(--white);
   color: var(--orange);
 }
+
+/* feedback */
+
+.main-content.none {
+  display: none;
+}
+
+.main-content.active {
+  display: block;
+}
+
+.image-ty {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.feedback-selected {
+  color: var(--orange);
+  font-weight: 300;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-radius: 40px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background: #272E38;
+  width: 20ch;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.title-ty {
+  text-align: center;
+}
+
+.feedback-paragraph {
+  text-align: center;
+}

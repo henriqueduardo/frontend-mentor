@@ -15,3 +15,13 @@ function initSelected() {
 }
 
 initSelected();
+
+const feedback = document.querySelector(".none");
+const btn = document.querySelector(".btn");
+
+function activeFeedbackMessage() {
+  feedback.classList.add("active");
+}
+btn.addEventListener("click", activeFeedbackMessage);
+
+
