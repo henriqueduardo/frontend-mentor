@@ -39,7 +39,7 @@ body {
   display: flex;
   background: #fff;
   width: 900px;
-  height: auto;
+  height: 557px;
   border-radius: 20px;
   padding: 30px;
 }
@@ -76,6 +76,7 @@ dt {
   color: var(--very-darkgray);
   border-bottom: 1px solid var(--light-grayish-blue);
   cursor: pointer;
+  font-weight: 400;
 }
 
 dt::after {
@@ -86,6 +87,38 @@ dt::after {
   float: right;
 }
 
-dd {
+.js-accordion dd {
   display: none;
+}
+
+.js-accordion dt.active::after {
+  content: "⌃";
+}
+
+.js-accordion dt.active {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  padding-bottom: 0px;
+  border: none;
+}
+
+.js-accordion dd.active {
+  display: block;
+  color: var(--dark-grayish-blue);
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid var(--light-grayish-blue);
+  padding-bottom: 15px;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 300px;
+  }
 }
