@@ -88,6 +88,11 @@ p {
   font-weight: 700;
 }
 
+.selected {
+  color: var(--white);
+  background: var(--orange);
+}
+
 .circles:hover {
   transition: 0.3s;
   background: var(--medium-grey);
