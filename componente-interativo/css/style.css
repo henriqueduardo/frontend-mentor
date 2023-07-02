@@ -5,7 +5,7 @@
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
   --darkblue: hsl(213, 19%, 18%);
-  --verydarkblue:hsl(216, 12%, 8%);
+  --verydarkblue: hsl(216, 12%, 8%);
   --orange: hsl(25, 97%, 53%);
 }
 
@@ -19,7 +19,7 @@ html {
   max-width: 1500px;
   min-width: 320px;
   margin: 0 auto;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 
 .image-bg {
   padding: 25px;
-  background: #272E38;
+  background: #272e38;
   max-width: 38px;
   border-radius: 50%;
   margin-bottom: 30px;
@@ -48,7 +48,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #1E252F;
+  background: #1e252f;
   padding: 30px;
   border-radius: 20px;
 }
@@ -78,7 +78,7 @@ p {
 
 .circles {
   padding: 25px;
-  background: #272E38;
+  background: #272e38;
   max-width: 38px;
   border-radius: 50%;
   margin-bottom: 30px;
@@ -152,7 +152,7 @@ p {
   display: block;
   margin: 0 auto;
   text-align: center;
-  background: #272E38;
+  background: #272e38;
   width: 20ch;
   margin-top: 30px;
   margin-bottom: 30px;
