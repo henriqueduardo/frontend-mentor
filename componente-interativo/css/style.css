@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --darkblue: hsl(213, 19%, 18%);
+  --verydarkblue:hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1500px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background: var(--verydarkblue);
+}
+
+.image-bg {
+  padding: 25px;
+  background: #272E38;
+  max-width: 38px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.image-star {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1E252F;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.main-text-content {
+  width: 350px;
+}
+
+h1 {
+  color: var(--white);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--medium-grey);
+  margin-bottom: 20px;
+}
+
+.circles-content-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.circles {
+  padding: 25px;
+  background: #272E38;
+  max-width: 38px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.circles span {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--medium-grey);
+  font-weight: 700;
+}
+
+.btn {
+  color: var(--white);
+  background: var(--orange);
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
