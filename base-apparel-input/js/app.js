@@ -11,6 +11,7 @@ function input(event) {
     errorEmail.innerHTML = "Please provide a valid email!";
     successEmail.innerHTML = "";
     emailInput.classList.add("error");
+    emailInput.focus();
     errorIcon.classList.add("active");
     return false;
   } else {
