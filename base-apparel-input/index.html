@@ -27,8 +27,19 @@
           Add your email below to stay-up-to-date with announcements and our
           launch deals.
         </p>
-        <form class="btn-box">
-          <input type="email" class="email-input" placeholder="Email Address" required/>
+        <form
+          class="btn-box"
+          name="form"
+          id="form"
+          onsubmit="return input(event)"
+        >
+          <input
+            type="email"
+            class="email-input"
+            placeholder="Email Address"
+            name="email"
+            id="email"
+          />
           <button class="btn" type="submit">
             <img
               src="img/icon-arrow.svg"
@@ -36,9 +47,13 @@
               class="btn-image"
             />
           </button>
+          <div id="error-email"></div>
+          <div id="success-email"></div>
+          <img src="img/icon-error.svg" alt="" id="error-icon">
         </form>
       </div>
       <img src="img/hero-desktop.jpg" alt="woman" class="hero-image" />
     </main>
+    <script src="js/app.js"></script>
   </body>
 </html>

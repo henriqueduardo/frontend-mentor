@@ -65,7 +65,7 @@ strong {
 
 .hero-image {
   width: 40%;
-  height: 672px;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -75,7 +75,7 @@ strong {
 }
 
 .email-input {
-  border: 1px solid var(--desaturated-red);
+  border: 2px solid var(--desaturated-red);
   border-radius: 2rem;
   width: 450px;
   padding: 15px 20px;
@@ -102,6 +102,38 @@ strong {
   right: 0px;
 }
 
+.btn:hover {
+  background: #FACECF;
+}
+
 .btn-image {
   width: 15px;
+}
+
+#error-email {
+  position: absolute;
+  padding: 10px 20px;
+  color: var(--desaturated-red);
+  font-size: 14px;
+}
+
+.email-input.error {
+  border: 2px solid var(--soft-red);
+}
+
+#error-icon {
+  display: none;
+}
+
+#error-icon.active {
+  display: block;
+  position: absolute;
+  left: 335px;
+  top: 12px;
+}
+
+#success-email {
+  padding: 10px 20px;
+  color: #111;
+  font-size: 14px;
 }
