@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: -hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: -hsl(210, 46%, 95%);
+}
+
+html {
+  max-width: 1500px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: #EDF2F8;
+  position: relative;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.drawers-image {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.main-content-text {
+  background: #fff;
+  padding: 30px 75px 30px 30px;
+  width: 500px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.main-content-text h1 {
+  font-size: 22px;
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.main-content-text p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: var(--Desaturated-Dark-Blue);
+  font-weight: 500;
+}
+
+.photo-icon {
+  width: 50px;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.social-content {
+  display: flex;
+}
+
+.social-content h3 {
+  font-size: 13px;
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+  position: relative;
+  top: 6px;
+  left: 16px;
+}
+
+.social-content h3::before {
+  content: '28 Jun 2020';
+  position: absolute;
+  color: var(--Desaturated-Dark-Blue);
+  font-weight: 500;
+  top: 20px;
+}
