@@ -90,8 +90,6 @@ body {
   top: 20px;
 }
 
-
-
 .share-icon {
   padding: 14px 12px;
   background: #edf2f8;
@@ -99,6 +97,76 @@ body {
   object-fit: contain;
   cursor: pointer;
   position: relative;
-  top: 4px;
+  top: 5px;
   left: 200px;
+}
+
+.share-icon:hover {
+  transition: 0.3s;
+  background: var(--Very-Dark-Grayish-Blue);
+}
+
+.share-icons-box-pop {
+  background: var(--Very-Dark-Grayish-Blue);
+  padding: 16px 20px;
+  width: 250px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  z-index: 99;
+  bottom: 95px;
+  left: 580px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 12.5px 0 12.5px;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  line-height: 0px;
+  _border-color: hsl(217, 19%, 35%) #000000 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  position: absolute;
+  bottom: -14px;
+  left: 120px;
+}
+
+.share-icons-box-pop span {
+  text-transform: uppercase;
+  color: var(--Desaturated-Dark-Blue);
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.share-icons-pop {
+  display: flex;
+  gap: 10px;
+  font-size: 22px;
+}
+
+a .bi {
+  color: #fff;
+  cursor: pointer;
+}
+
+.bi:hover {
+  transition: 0.3s;
+  color: var(--Desaturated-Dark-Blue);
+}
+
+.share-icons-box-pop.disabled {
+  display: none;
+}
+
+.share-icons-box-pop.active {
+  display: flex;
+}
+
+.share-icon.btn-active {
+  background: var(--Very-Dark-Grayish-Blue);
 }
