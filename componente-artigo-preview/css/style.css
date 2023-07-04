@@ -170,3 +170,63 @@ a .bi {
 .share-icon.btn-active {
   background: var(--Very-Dark-Grayish-Blue);
 }
+
+@media (max-width: 825px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .drawers-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .main-content-text {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .main-content-text h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .social-content {
+    margin-top: 30px;
+  }
+  .share-icons-box-pop {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 20px;
+    justify-content: start;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .triangle {
+    display: none;
+  }
+  .share-icon.btn-active {
+    background: #fff;
+    z-index: 100;
+    top: 18px;
+}
+}
+
+@media (max-width: 515px) {
+  .main-content, .main-content-text {
+    width: 300px;
+  }
+  .drawers-image {
+    height: 200px;
+  }
+  .main-content-text {
+    padding: 20px;
+  }
+  .main-content-text h1 {
+    font-size: 18px;
+  }
+  .share-icon {
+    left: 40px;
+    top: 8px;
+  }
+  .share-icon.btn-active {
+    left: 40px;
+    top: 8px;
+  }
+}
