@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  background: #EDF2F8;
+  background: #edf2f8;
   position: relative;
   height: 100vh;
 }
@@ -83,9 +83,22 @@ body {
 }
 
 .social-content h3::before {
-  content: '28 Jun 2020';
+  content: "28 Jun 2020";
   position: absolute;
   color: var(--Desaturated-Dark-Blue);
   font-weight: 500;
   top: 20px;
+}
+
+
+
+.share-icon {
+  padding: 14px 12px;
+  background: #edf2f8;
+  border-radius: 2rem;
+  object-fit: contain;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  left: 200px;
 }
