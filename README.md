@@ -1,6 +1,4 @@
 # Lista de projetos
-Projetos feitos com o intuito de melhorar minhas habilidades através de uma variedade de desafios que cobrem diferentes níveis e aspectos do desenvolvimento web.
-
 ### Interactive rating component
 
 Projeto simples para praticar o tratamento de interações do usuário através do DOM.
