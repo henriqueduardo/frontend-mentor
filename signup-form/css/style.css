@@ -81,7 +81,7 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 25px;
   border-radius: 8px;
   box-shadow: 0px 6px 0px rgb(0 0 0 / 0.2);
 }
@@ -139,4 +139,36 @@ strong {
   text-decoration: none;
   color: var(--Red);
   font-weight: 700;
+}
+
+.errors-box {
+  position: relative;
+}
+
+.error-name, .error-lastName, .error-email, .error-password {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  color: var(--Red);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.error-border {
+    outline: 1px solid var(--Red) !important;
+}
+
+.sucess-border {
+  outline: 1px solid var(--Green) !important;
+}
+
+.error-icon-name, .error-icon-lastName, .error-icon-email, .error-icon-password {
+  display: none;
+}
+
+.error-icon-name.active, .error-icon-lastName.active, .error-icon-email.active, .error-icon-password.active {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
 }
