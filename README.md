@@ -34,7 +34,7 @@ In this challenge, you'll be building out an FAQ accordion. This is an extremely
 Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.
 <br>
 <br>
-<a href="https://github.com/henriqueduardo/frontend-mentor/tree/main/base-apparel-input" target="_blank">código</a> | <a href="https://base-apparel-livid.vercel.app/" target="_blank">deploy</a> | <a href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0" target="_blank">challenge hub</a>
+<a href="https://github.com/henriqueduardo/frontend-mentor/tree/main/componente-artigo-preview" target="_blank">código</a> | <a href="https://componente-preview.vercel.app/" target="_blank">deploy</a> | <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank">challenge hub</a>
 <br>
 <br>
 ![image](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/xqhq3ggsxbtkv4o3av6j.jpg)
