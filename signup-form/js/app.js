@@ -19,6 +19,9 @@ let password = document.querySelector(".input-password");
 let errorPassword = document.querySelector(".error-password");
 const errorIconPassword = document.querySelector(".error-icon-password");
 
+const modal = document.querySelector(".modal-bg");
+const bodyElement = document.querySelector("#body");
+
 function validateForm(event) {
   event.preventDefault();
 
@@ -69,6 +72,8 @@ function validateForm(event) {
     password.classList.add("sucess-border");
     errorPassword.innerHTML = "";
   }
+  bodyElement.classList.toggle("modal-open");
+  modal.classList.add("active-modal");
 }
 
 btn.addEventListener("click", validateForm);
