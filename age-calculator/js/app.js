@@ -89,14 +89,13 @@ function validate(event) {
       months += 12;
     }
 
-    let yearsElement = document.querySelector(".years");
-    let monthsElement = document.querySelector(".months");
-    let daysElement = document.querySelector(".days");
+    let yearsElement = document.querySelector(".years-element");
+    let monthsElement = document.querySelector(".months-element");
+    let daysElement = document.querySelector(".days-element");
 
-    yearsElement.innerHTML = "<span>" + years + "</span> years";
-    monthsElement.innerHTML = "<span>" + months + "</span> months";
-    daysElement.innerHTML = "<span>" + Math.abs(days) + "</span> days"; // -
-    console.log("teste");
+    yearsElement.innerHTML = years;
+    monthsElement.innerHTML = months;
+    daysElement.innerHTML = Math.abs(days); // -
   }
 }
 
