@@ -59,3 +59,18 @@ This layout looks simple enough, but there are some interesting details to it th
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+### Intro component with sign-up form
+
+Practice building out a sign-up form complete with client-side validation using JavaScript.
+<br>
+<br>
+<a href="https://github.com/henriqueduardo/frontend-mentor/tree/main/signup-form" target="_blank">código</a> | <a href="https://signup-form-eight-theta.vercel.app/" target="_blank">deploy</a> | <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1" target="_blank">challenge hub</a>
+<br>
+<br>
+![image](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/mnmpkjsbvur3xvrydf66.jpg)
+<br>
+<br>
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
