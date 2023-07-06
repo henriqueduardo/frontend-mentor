@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+}
+
+body {
+  position: relative;
+  background: var(--Light-grey);
+  height: 100vh;
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--White);
+  padding: 30px 100px 30px 30px;
+  border-radius: 20px 20px 150px 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.input-content-box {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 40px;
+  padding-right: 60px;
+  border-bottom: 1px solid var(--Light-grey);
+}
+
+.input-age-content {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--Smokey-grey);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+input {
+  outline: none;
+  border: 1px solid var(--Light-grey);
+  border-radius: 6px;
+  padding: 20px 20px;
+  width: 160px;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  font-size: 32px;
+  color: var(--Smokey-grey);
+  font-weight: 800;
+}
+
+.results-content-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.results-content-box span {
+  color: var(--Purple);
+}
+
+.results-content-box h1 {
+  color: var(--Off-black);
+  font-size: 64px;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 10px;
+  background: var(--Purple);
+  cursor: pointer;
+  position: absolute;
+  top: 140px;
+  left: 600px;
+}
