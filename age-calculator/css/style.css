@@ -73,6 +73,10 @@ input {
   text-transform: uppercase;
 }
 
+input:focus {
+  outline: 1px solid var(--Purple);
+}
+
 input::placeholder {
   font-size: 32px;
   color: var(--Smokey-grey);
@@ -107,4 +111,39 @@ input::placeholder {
   position: absolute;
   top: 140px;
   left: 600px;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  background: var(--Off-black);
+}
+
+.label-days.active, .label-months.active, .label-years.active {
+  color: var(--Light-red) !important;
+}
+
+.input-years.active, .input-days.active, .input-months.active {
+  outline: 1px solid var(--Light-red) !important;
+}
+
+.sucess-border {
+  outline: 1px solid var(--Purple) !important;
+}
+
+.sucess-label {
+  color: var(--Purple);
+}
+
+.error-years, .error-days, .error-months {
+  display: none;
+}
+
+.error-years.active, .error-days.active, .error-months.active {
+  display: block;
+  position: absolute;
+  color: var(--Light-red);
+  font-style: italic;
+  font-weight: 500;
+  top: 140px;
+  font-size: 14px;
 }
