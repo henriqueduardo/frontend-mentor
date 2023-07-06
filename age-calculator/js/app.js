@@ -93,9 +93,9 @@ function validate(event) {
     let monthsElement = document.querySelector(".months");
     let daysElement = document.querySelector(".days");
 
-    daysElement.innerHTML = "<span>" + Math.abs(days) + "</span> days"; // -
-    monthsElement.innerHTML = "<span>" + months + "</span> months";
     yearsElement.innerHTML = "<span>" + years + "</span> years";
+    monthsElement.innerHTML = "<span>" + months + "</span> months";
+    daysElement.innerHTML = "<span>" + Math.abs(days) + "</span> days"; // -
     console.log("teste");
   }
 }
