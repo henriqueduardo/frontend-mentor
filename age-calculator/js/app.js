@@ -56,7 +56,7 @@ function validate(event) {
     labelYear.classList.add("active");
     inputlYear.classList.add("active");
     inputlYear.focus();
-  } else if(inputlYear.value === "") {
+  } else if (inputlYear.value === "") {
     errorYear.classList.add("active");
     labelYear.classList.add("active");
     inputlYear.classList.add("active");
@@ -67,6 +67,36 @@ function validate(event) {
     labelYear.classList.remove("active");
     inputlYear.classList.add("sucess-border");
     labelYear.classList.add("sucess-label");
+  }
+  if (
+    !inputDay.classList.contains("active") &&
+    !inputMonth.classList.contains("active") &&
+    !inputlYear.classList.contains("active")
+  ) {
+    let birthDate = new Date(
+      Number(inputlYear.value),
+      Number(inputMonth.value) - 1,
+      Number(inputDay.value)
+    );
+    let today = new Date();
+
+    let days = today.getDate() - birthDate.getDate();
+    let months = today.getMonth() - birthDate.getMonth();
+    let years = today.getFullYear() - birthDate.getFullYear();
+
+    if (months < 0 || (months === 0 && days < 0)) {
+      years--;
+      months += 12;
+    }
+
+    let yearsElement = document.querySelector(".years");
+    let monthsElement = document.querySelector(".months");
+    let daysElement = document.querySelector(".days");
+
+    daysElement.innerHTML = "<span>" + Math.abs(days) + "</span> days"; // -
+    monthsElement.innerHTML = "<span>" + months + "</span> months";
+    yearsElement.innerHTML = "<span>" + years + "</span> years";
+    console.log("teste");
   }
 }
 
