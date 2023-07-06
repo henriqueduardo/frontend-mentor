@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Age Calculator App</title>
+    <title>Age Calculator</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <main class="main-content">
+    <form class="main-content">
       <div class="input-content-box">
         <div class="input-age-content">
           <label for="day">day</label>
@@ -27,14 +27,22 @@
           <input type="number" placeholder="YYYY" />
         </div>
       </div>
-      <button class="btn">
-        <img src="img/icon-arrow.svg" alt="arrow icon button" class="btn-arrow-image">
+      <button class="btn" type="submit">
+        <img
+          src="img/icon-arrow.svg"
+          alt="arrow icon button"
+          class="btn-arrow-image"
+        />
       </button>
       <div class="results-content-box">
-          <h1 class="years"><span>- -</span> years</h1>
-          <h1 class="months"><span>- -</span> months</h1>
-          <h1 class="days"><span>- -</span> days</h1>
+        <h1 class="years"><span>- -</span> years</h1>
+        <div class="error-year"></div>
+        <h1 class="months"><span>- -</span> months</h1>
+        <div class="error-months"></div>
+        <h1 class="days"><span>- -</span> days</h1>
+        <div class="error-days"></div>
       </div>
-    </main>
+    </form>
+    <script src="js/app.js"></script>
   </body>
 </html>
