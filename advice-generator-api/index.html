@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice Generator API</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="main-bg">
+      <div class="advice-content">
+        <span id="advice-id">advice #123</span>
+        <h1 id="advice-quote">
+          “Click the button below to generate a random quote.”
+        </h1>
+        <img class="pattern-image" src="img/pattern-divider-desktop.svg" alt="pattern">
+        <button id="btn" onclick="randomQuote()">
+          <img src="img/icon-dice.svg" alt="dice button" />
+        </button>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>

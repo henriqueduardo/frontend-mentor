@@ -1,0 +1,83 @@
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-bg {
+  width: 100%;
+  height: 100vh;
+  background: $dark-blue;
+}
+
+.advice-content {
+  max-width: 550px;
+  min-width: 320px;
+  border-radius: 10px;
+  background: $dark-grayish-blue;
+  color: $light-cyan;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 40px;
+  @media (max-width: 500px) {
+    padding: 20px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 30px;
+    @media (max-width: 700px) {
+      font-size: 18px;
+    }
+  }
+  .pattern-image {
+    position: relative;
+    top: 20px;
+    width: 100%;
+  }
+  span {
+    color: $neon-green;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+  button {
+    background: $neon-green;
+    padding: 14px;
+    border-radius: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    &:hover {
+      transition: 0.3s;
+      box-shadow: 0px 0px 15px 5px $neon-green;
+    }
+    @media (max-width: 500px) {
+      top: 40px;
+    }
+    img {
+      width: 20px;
+    }
+  }
+}
