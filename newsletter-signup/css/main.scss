@@ -1,0 +1,105 @@
+$tomato: hsl(4, 100%, 67%);
+$dark-slate-grey: hsl(234, 29%, 20%);
+$charcoal-grey: hsl(235, 18%, 26%);
+$grey: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  max-width: 1500px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.main-bg {
+  background: $charcoal-grey;
+  height: 100vh;
+  width: 100%;
+}
+
+.form-content {
+  display: flex;
+  gap: 60px;
+  border-radius: 25px;
+  width: 850px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  padding: 20px 20px;
+}
+
+.content {
+  margin-left: 40px;
+  h1 {
+    font-size: 48px;
+    color: $dark-slate-grey;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  label {
+    color: $dark-slate-grey;
+    font-weight: 700;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  input {
+    border: 1px solid $grey;
+    outline: none;
+    width: 100%;
+    border-radius: 6px;
+    padding: 16px 24px;
+    margin-bottom: 20px;
+    &:placeholder {
+      color: $grey;
+    }
+    &:focus {
+      transition: 0.3s;
+      border: 1px solid $tomato;
+    }
+  }
+  button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: $white;
+    padding: 16px 24px;
+    width: 100%;
+    background: $dark-slate-grey;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      transition: 0.3s;
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    }
+  }
+}
+
+.image {
+  img {
+    width: 325px;
+  }
+}

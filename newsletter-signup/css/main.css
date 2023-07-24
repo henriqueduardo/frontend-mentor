@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  max-width: 1500px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.main-bg {
+  background: hsl(235, 18%, 26%);
+  height: 100vh;
+  width: 100%;
+}
+
+.form-content {
+  display: flex;
+  gap: 60px;
+  border-radius: 25px;
+  width: 850px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: hsl(0, 0%, 100%);
+  padding: 20px 20px;
+}
+
+.content {
+  margin-left: 40px;
+}
+.content h1 {
+  font-size: 48px;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 20px;
+}
+.content p {
+  margin-bottom: 20px;
+}
+.content ul {
+  list-style: none;
+}
+.content li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.content label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.content input {
+  border: 1px solid hsl(231, 7%, 60%);
+  outline: none;
+  width: 100%;
+  border-radius: 6px;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+}
+.content input:placeholder {
+  color: hsl(231, 7%, 60%);
+}
+.content input:focus {
+  transition: 0.3s;
+  border: 1px solid hsl(4, 100%, 67%);
+}
+.content button {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+  padding: 16px 24px;
+  width: 100%;
+  background: hsl(234, 29%, 20%);
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.content button:hover {
+  transition: 0.3s;
+  background: linear-gradient(to right, #fe8c00, #f83600);
+}
+
+.image img {
+  width: 325px;
+}/*# sourceMappingURL=main.css.map */
