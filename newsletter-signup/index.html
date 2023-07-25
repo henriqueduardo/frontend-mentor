@@ -30,8 +30,11 @@
         </ul>
         <form action="">
           <label for="email">Email address</label>
-          <input type="email" name="email" placeholder="email@company.com">
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <div class="email-required">
+            <input type="email" name="email" placeholder="email@company.com" class="" id="input-email">
+            <span class="error-span">Valid email required</span>
+          </div>
+            <button type="submit" id="btn">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <div class="image">
@@ -39,5 +42,6 @@
       </div>
     </div>
   </main>
+  <script src="js/app.js"></script>
 </body>
 </html>

@@ -65,7 +65,22 @@ html {
     margin-top: 40px;
     margin-bottom: 10px;
   }
-  input {
+  .email-required {
+    position: relative;
+    .error-span {
+      display: none;
+    }
+    .error-span.active {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -25px;
+      color: $tomato;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  #input-email {
     border: 1px solid $grey;
     outline: none;
     width: 100%;
@@ -79,6 +94,11 @@ html {
       transition: 0.3s;
       border: 1px solid $tomato;
     }
+  }
+  #input-email.error {
+    color: $tomato;
+    border: 1px solid $tomato;
+    background: #FFE8E6;
   }
   button {
     outline: none;

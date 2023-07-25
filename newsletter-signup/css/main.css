@@ -59,7 +59,22 @@ html {
   margin-top: 40px;
   margin-bottom: 10px;
 }
-.content input {
+.content .email-required {
+  position: relative;
+}
+.content .email-required .error-span {
+  display: none;
+}
+.content .email-required .error-span.active {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  color: hsl(4, 100%, 67%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.content #input-email {
   border: 1px solid hsl(231, 7%, 60%);
   outline: none;
   width: 100%;
@@ -67,12 +82,17 @@ html {
   padding: 16px 24px;
   margin-bottom: 20px;
 }
-.content input:placeholder {
+.content #input-email:placeholder {
   color: hsl(231, 7%, 60%);
 }
-.content input:focus {
+.content #input-email:focus {
   transition: 0.3s;
   border: 1px solid hsl(4, 100%, 67%);
+}
+.content #input-email.error {
+  color: hsl(4, 100%, 67%);
+  border: 1px solid hsl(4, 100%, 67%);
+  background: #FFE8E6;
 }
 .content button {
   outline: none;
