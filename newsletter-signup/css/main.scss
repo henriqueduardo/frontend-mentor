@@ -117,7 +117,7 @@ html {
     cursor: pointer;
     &:hover {
       transition: 0.3s;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+      background: linear-gradient(to right, #ff6257, #ff6257 60%, #ff8f47);
     }
   }
 }
@@ -173,7 +173,7 @@ html {
     text-align: center;
     &:hover {
       transition: 0.3s;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+    background: linear-gradient(to right, #ff6257, #ff6257 60%, #ff8f47);
     }
   }
 }

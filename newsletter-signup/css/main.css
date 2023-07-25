@@ -112,7 +112,7 @@ html {
 }
 .content button:hover {
   transition: 0.3s;
-  background: linear-gradient(to right, #fe8c00, #f83600);
+  background: linear-gradient(to right, #ff6257, #ff6257 60%, #ff8f47);
 }
 
 .image img {
@@ -166,5 +166,5 @@ html {
 }
 .modal.active button:hover {
   transition: 0.3s;
-  background: linear-gradient(to right, #fe8c00, #f83600);
+  background: linear-gradient(to right, #ff6257, #ff6257 60%, #ff8f47);
 }/*# sourceMappingURL=main.css.map */
