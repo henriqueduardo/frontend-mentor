@@ -39,6 +39,10 @@ html {
   padding: 20px 20px;
 }
 
+.form-content.disabled {
+  display: none;
+}
+
 .content {
   margin-left: 40px;
   h1 {
@@ -84,7 +88,7 @@ html {
     border: 1px solid $grey;
     outline: none;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 16px 24px;
     margin-bottom: 20px;
     &:placeholder {
@@ -103,7 +107,7 @@ html {
   button {
     outline: none;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     color: $white;
     padding: 16px 24px;
     width: 100%;
@@ -121,5 +125,55 @@ html {
 .image {
   img {
     width: 325px;
+  }
+}
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: block;
+  position: absolute;
+  background: $white;
+  width: 470px;
+  border-radius: 25px;
+  padding: 60px 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  img {
+    margin-bottom: 20px;
+    width: 60px;
+  }
+  h1 {
+    color: $dark-slate-grey;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: $dark-slate-grey;
+    margin-bottom: 20px;
+    .email-send {
+      color: $dark-slate-grey;
+      font-weight: 700;
+    }
+  }
+  button {
+    width: 100%;
+    padding: 16px 24px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: $dark-slate-grey;
+    font-weight: 700;
+    color: $white;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      transition: 0.3s;
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    }
   }
 }

@@ -32,6 +32,10 @@ html {
   padding: 20px 20px;
 }
 
+.form-content.disabled {
+  display: none;
+}
+
 .content {
   margin-left: 40px;
 }
@@ -78,7 +82,7 @@ html {
   border: 1px solid hsl(231, 7%, 60%);
   outline: none;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 16px 24px;
   margin-bottom: 20px;
 }
@@ -97,7 +101,7 @@ html {
 .content button {
   outline: none;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   color: hsl(0, 0%, 100%);
   padding: 16px 24px;
   width: 100%;
@@ -113,4 +117,54 @@ html {
 
 .image img {
   width: 325px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: block;
+  position: absolute;
+  background: hsl(0, 0%, 100%);
+  width: 470px;
+  border-radius: 25px;
+  padding: 60px 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.modal.active img {
+  margin-bottom: 20px;
+  width: 60px;
+}
+.modal.active h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.modal.active p {
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 20px;
+}
+.modal.active p .email-send {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+.modal.active button {
+  width: 100%;
+  padding: 16px 24px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: hsl(234, 29%, 20%);
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  text-align: center;
+}
+.modal.active button:hover {
+  transition: 0.3s;
+  background: linear-gradient(to right, #fe8c00, #f83600);
 }/*# sourceMappingURL=main.css.map */
