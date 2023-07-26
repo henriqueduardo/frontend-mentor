@@ -1,0 +1,135 @@
+$Grayish-blue: hsl(237, 18%, 59%);
+$Soft-red: hsl(345, 95%, 68%);
+$white: hsl(0, 0%, 100%);
+$dark-desaturated-blue: hsl(236, 21%, 26%);
+$very-dark-blue: hsl(235, 16%, 14%);
+$very-black-dark-blue: hsl(234, 17%, 12%);
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Text", sans-serif;
+  min-width: 320px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  background-image: url(../images/bg-stars.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $very-dark-blue;
+  position: relative;
+}
+
+.main-bg {
+  margin-top: 100px;
+  width: 1000px;
+  height: 550px;
+  h1 {
+    color: $white;
+    font-size: 38px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  .coutdown-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    div {
+      position: relative;
+      border-radius: 10px;
+      background: linear-gradient(0deg, rgba(52,54,79,1) 50%, rgba(44,44,68,1) 50%);
+      padding: 40px 40px;
+      box-shadow: inset 0 -10px 0 rgba(0, 0, 0, 0.50);
+      &:before {
+        content: "";
+        position: absolute;
+        border-radius: 0px 20px 20px 0px;
+        width: 10px;
+        height: 20px;
+        top: 45%;
+        left: 0;
+        background: $very-black-dark-blue;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        border-radius: 20px 0px 0px 20px;
+        width: 10px;
+        height: 20px;
+        top: 45%;
+        right: 0;
+        background: $very-black-dark-blue;
+      }
+      p {
+        font-size: 80px;
+        font-weight: 700;
+        color: $Soft-red;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          left: 0;
+          top: 50%;
+          z-index: 999;
+          background: $very-black-dark-blue;
+        }
+      }
+      span {
+        position: absolute;
+        bottom: -40px;
+        color: $Grayish-blue;
+        font-size: 14px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.footer-bg {
+  width: 100%;
+  margin-top: 250px;
+  height: auto;
+  position: relative;
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    ul {
+      display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    }
+    ul li {
+      list-style: none;
+      display: inline-block;
+      position: relative;
+      z-index: 999;
+      a {
+        margin-right: 40px;
+      }
+    }
+}
