@@ -82,6 +82,7 @@ body {
   font-size: 80px;
   font-weight: 700;
   color: hsl(345, 95%, 68%);
+  text-align: center;
 }
 .main-bg .coutdown-content div p:before {
   content: "";
