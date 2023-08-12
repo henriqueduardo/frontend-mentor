@@ -104,3 +104,32 @@ Aplicação que gera citações aleatórias através de uma API.
 ![SASS](https://img.shields.io/badge/sass-C04C80.svg?style=for-the-badge&logo=sass&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+### Newsletter sign-up form 
+
+Validação de formulário para inscrição que exibe uma mensagem de sucesso após o envio.
+<br>
+<br>
+<a href="https://github.com/henriqueduardo/frontend-mentor/tree/main/newsletter-signup" target="_blank">código</a> | <a href="https://newsletter-beige.vercel.app/" target="_blank">deploy</a>
+<br>
+<br>
+![image](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/q7yvs5yvgchjhjs2znay.jpg)
+<br>
+<br>
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/sass-C04C80.svg?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+### Launch countdown timer
+
+Cronômetro de contagem regressiva para um evento, exibindo dias, horas, minutos e segundos restantes até o lançamento do evento.
+<br>
+<br>
+<a href="https://github.com/henriqueduardo/frontend-mentor/tree/main/countdown-timer" target="_blank">código</a> | <a href="https://countdwn-timer.vercel.app/" target="_blank">deploy</a>
+<br>
+<br>
+![image](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sgyggipeoqrv2inrkxja.jpg)
+<br>
+<br>
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/sass-C04C80.svg?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)

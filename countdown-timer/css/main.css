@@ -135,6 +135,9 @@ body {
 }
 
 @media (max-width: 850px) {
+  .main-bg {
+    margin-top: 250px;
+  }
   .main-bg .coutdown-content div {
     width: 140px;
     height: 140px;
@@ -185,6 +188,9 @@ body {
   }
 }
 @media (max-width: 400px) {
+  .main-bg {
+    margin-top: 200px;
+  }
   .main-bg .coutdown-content div {
     width: 60px;
     height: 60px;
