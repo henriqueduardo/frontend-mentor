@@ -39,7 +39,7 @@ body {
 
 .main-bg {
   margin-top: 100px;
-  width: 1000px;
+  width: 100%;
   height: 550px;
   h1 {
     color: $white;
@@ -123,6 +123,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    max-width: 100%;
   }
   ul {
     display: flex;
@@ -136,6 +137,109 @@ body {
     z-index: 999;
     a {
       margin-right: 40px;
+    }
+    img {
+      max-width: 24px;
+      max-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .main-bg {
+    .coutdown-content {
+      div {
+        width: 140px;
+        height: 140px;
+        p {
+          font-size: 46px;
+        }
+      }
+    }
+  }
+  .footer-bg {
+    ul {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .main-bg {
+    .coutdown-content {
+      div {
+        width: 80px;
+        height: 80px;
+        padding: 20px 20px;
+        p {
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .main-bg {
+    h1 {
+      font-size: 28px;
+    }
+    .coutdown-content {
+      div {
+        span {
+          bottom: -15px;
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.5);
+        &:before {
+          width: 8px;
+          height: 16px;
+          top: 41%;
+        }
+        &:after {
+          width: 8px;
+          height: 16px;
+          top: 41%;
+        }
+      }
+    }
+  }
+  .footer-bg {
+    img {
+      height: 150px;
+    }
+    ul {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .main-bg {
+    .coutdown-content {
+      div {
+        width: 60px;
+        height: 60px;
+        padding: 15px 15px;
+        &:after {
+          width: 5px;
+          height: 10px;
+          top: 42%;
+        }
+        &:before {
+          width: 5px;
+          height: 10px;
+          top: 42%;
+        }
+        p {
+          font-size: 22px;
+          text-align: center;
+        }
+        span {
+          bottom: -12px;
+          font-size: 6px;
+          letter-spacing: 1px;
+        }
+      }
     }
   }
 }
