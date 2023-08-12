@@ -58,9 +58,15 @@ body {
     div {
       position: relative;
       border-radius: 10px;
-      background: linear-gradient(0deg, rgba(52,54,79,1) 50%, rgba(44,44,68,1) 50%);
+      background: linear-gradient(
+        0deg,
+        rgba(52, 54, 79, 1) 50%,
+        rgba(44, 44, 68, 1) 50%
+      );
       padding: 40px 40px;
-      box-shadow: inset 0 -10px 0 rgba(0, 0, 0, 0.50);
+      width: 186px;
+      height: 185px;
+      box-shadow: inset 0 -10px 0 rgba(0, 0, 0, 0.5);
       &:before {
         content: "";
         position: absolute;
@@ -86,7 +92,7 @@ body {
         font-weight: 700;
         color: $Soft-red;
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           width: 100%;
           height: 1px;
@@ -113,23 +119,23 @@ body {
   margin-top: 250px;
   height: auto;
   position: relative;
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-    ul {
-      display: flex;
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  ul {
+    display: flex;
     justify-content: center;
     margin-bottom: 80px;
+  }
+  ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    a {
+      margin-right: 40px;
     }
-    ul li {
-      list-style: none;
-      display: inline-block;
-      position: relative;
-      z-index: 999;
-      a {
-        margin-right: 40px;
-      }
-    }
+  }
 }
