@@ -200,12 +200,20 @@ strong {
   .btn {
     top: 0px;
   }
+  #success-email {
+    text-align: center;
+  }
+  #error-email {
+    text-align: center;
+    position: relative;
+  }
 }
 
 @media (max-width: 460px) {
   .text-content h1 {
     font-size: 32px;
   }
+
 }
 
 @media (max-width: 400px) {
