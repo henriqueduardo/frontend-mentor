@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spliter - Tip</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header class="header-bg" aria-label="header and logo">
+        <img src="images/logo.svg" alt="logo" />
+      </header>
+      <main aria-label="main content and tip calculator form">
+        <form action="" class="form" aria-label="form content">
+          <div class="calculate-tip">
+            <fieldset class="input-text-box">
+              <label for="bill">Bill</label>
+              <div class="input-container">
+                <span class="dollar-icon"></span>
+                <input type="number" name="bill" placeholder="0" id="bill" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <label for="tip">Select Tip %</label>
+              <div class="radio-container">
+                <label
+                  class="radio-button"
+                  aria-label="option 5% of the total amount"
+                  >5%</label
+                >
+                <label
+                  class="radio-button"
+                  aria-label="option 10% of the total amount"
+                  >10%</label
+                >
+                <label
+                  class="radio-button"
+                  aria-label="option 15% of the total amount"
+                  >15%</label
+                >
+              </div>
+              <div class="radio-container">
+                <label
+                  class="radio-button"
+                  aria-label="option 25% of the total amount"
+                  >25%</label
+                >
+                <label
+                  class="radio-button"
+                  aria-label="option 50% of the total amount"
+                  >50%</label
+                >
+                <input
+                  type="number"
+                  name="custom"
+                  placeholder="Custom"
+                  class="radio-button-custom"
+                  aria-label="custom option of the total amount"
+                />
+              </div>
+            </fieldset>
+            <fieldset class="input-text-box">
+              <label for="peoples">Number of People</label>
+              <div class="input-container">
+                <span class="people-icon"></span>
+                <input type="number" name="peoples" placeholder="0" />
+              </div>
+            </fieldset>
+          </div>
+          <div class="result-tip">
+            <div>
+              <div class="tip-amount">
+                <p>Tip Amount</p>
+                <span>$0.00</span>
+              </div>
+              <div class="tip-total">
+                <p>Total</p>
+                <span>$0.00</span>
+              </div>
+            </div>
+            <button class="btn-reset" type="reset" aria-label="reset button">reset</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
