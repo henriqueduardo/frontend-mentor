@@ -43,7 +43,7 @@ body {
 .header-bg {
   display: flex;
   justify-content: center;
-  padding: 60px 0px;
+  padding: 40px 0px;
 }
 
 form {
@@ -227,6 +227,28 @@ input[type="radio"] {
   transform: scale(0.9);
 }
 
+.radio-button-custom:hover {
+  transition: 0.3s;
+  color: var(--very-dark-cyan);
+  background: var(--hover);
+  transform: scale(0.95);
+}
+
+.radio-button-custom:focus {
+  transition: 0.3s;
+  transform: scale(0.9);
+  color: var(--white);
+  background: var(--strong-cyan);
+}
+
+.radio-button-custom.checked-effect {
+  transition: 0.3s;
+  transform: scale(0.9);
+  color: var(--white);
+  background: var(--strong-cyan);
+  border: 2px solid var(--strong-cyan);
+}
+
 .radio-button:focus {
   border: none;
 }
@@ -325,7 +347,8 @@ input[type="radio"] {
 
 /* errors */
 #bill.active,
-#peoples.active {
+#peoples.active,
+#customPercentage.active {
   border: 2px solid #d7765e;
 }
 

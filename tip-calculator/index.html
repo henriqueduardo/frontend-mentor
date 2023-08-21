@@ -44,7 +44,6 @@
                   data-tip="percentage"
                   value="5"
                   id="percentage-5"
-                  checked
                 />
                 <input
                   type="radio"
@@ -90,7 +89,8 @@
                   placeholder="Custom"
                   class="radio-button-custom"
                   aria-label="custom option of the total amount"
-                  
+                  data-tip="percentage"
+                  value=""
                   id="customPercentage"
                 />
               </div>
@@ -118,7 +118,7 @@
               </div>
               <div class="tip-total">
                 <p>Total</p>
-                <span>$0.00</span>
+                <span data-tip="tip-total">$0.00</span>
               </div>
             </div>
             <button class="btn-reset" type="reset" aria-label="reset button" data-tip="reset">
