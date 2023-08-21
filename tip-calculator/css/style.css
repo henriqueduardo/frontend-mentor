@@ -99,6 +99,13 @@ input:focus {
   border: 2px solid var(--strong-cyan);
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; /* Remove o espaço que a seta ocupava */
+}
+
 .input-container {
   position: relative;
   display: flex;
