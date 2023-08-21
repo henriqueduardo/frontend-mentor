@@ -104,6 +104,7 @@ function validateData() {
 
 function resetTips() {
   showTipAmount.textContent = "$0.00";
+  showTipTotal.textContent = "$0.00";
 }
 
 btn.addEventListener("click", resetTips);
