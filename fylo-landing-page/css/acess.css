@@ -1,0 +1,67 @@
+.acess-bg {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(0deg, rgba(12,21,36,1) 44%, rgba(24,30,42,1) 44%);
+}
+
+.acess-bg h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-family: var(--heading-font);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.acess-bg p {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-family: var(--body-font);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form {
+  display: block;
+  margin: 0 auto;
+  width: 850px;
+  background: #1C2230;
+  padding: 40px 100px;
+  border-radius: 8px;
+  box-shadow: #12182488 5px 5px;
+}
+
+.email-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+  border: none;
+}
+
+.form input {
+  padding: 16px 16px;
+  width: 450px;
+  background: var(--white);
+  border-radius: 22px;
+  outline: none;
+  border: none;
+}
+
+.form input::placeholder {
+  font-family: var(--body-font);
+}
+
+.btn-form {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 16px 36px;
+  border-radius: 22px;
+  color: var(--white);
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    var(--cyan-inside-call-to-action-gradient),
+    var(--blue-inside-call-to-action-gradient)
+  );
+}

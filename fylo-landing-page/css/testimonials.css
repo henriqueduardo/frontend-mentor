@@ -18,6 +18,7 @@
   border-radius: 8px;
   position: relative;
   z-index: 10;
+  box-shadow: #12182488 5px 5px;
 }
 
 .testimonials-content-box .testimonials-content:first-child::before {
@@ -54,11 +55,11 @@
 
 .person-content-text h3 {
   font-family: var(--heading-font);
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
 .person-content-text span {
   font-family: var(--body-font);
-  font-size: 0.70rem;
+  font-size: 0.7rem;
 }
