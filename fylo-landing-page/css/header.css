@@ -1,0 +1,24 @@
+.header-bg {
+  width: 100%;
+  height: auto;
+  background: var(--dark-blue-testimonials-background);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
