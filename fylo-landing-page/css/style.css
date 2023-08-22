@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 @import url(header.css);
+@import url(hero.css);
 
 * {
   padding: 0;
@@ -13,11 +14,15 @@ html {
   margin: 0 auto;
 }
 
+body {
+  background: var(--dark-blue-main-background);
+}
+
 :root {
   --dark-blue-intro-email-sign-up-background: hsl(217, 28%, 15%);
   --dark-blue-main-background: hsl(218, 28%, 13%);
   --dark-blue-footer-background: hsl(216, 53%, 9%);
-  --dark-blue-testimonials-background: hsl(219, 30%, 18%);
+  --dark-blue-testimonials-background: #1C2230;
 
   --cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
   --blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);

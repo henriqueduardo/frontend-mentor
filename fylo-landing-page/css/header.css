@@ -13,7 +13,7 @@
 .nav-menu ul {
   list-style: none;
   display: flex;
-  gap: 60px;
+  gap: 20px;
 }
 
 .nav-menu ul li a {
@@ -21,4 +21,11 @@
   color: var(--white);
   font-family: var(--heading-font);
   font-weight: 400;
+  padding: 12px 24px;
+}
+
+.nav-menu ul li a:hover {
+  transition: 0.3s;
+  background: var(--dark-blue-footer-background);
+  border-radius: 4px;
 }

@@ -1,0 +1,66 @@
+.hero-bg {
+  width: 100%;
+  height: auto;
+  background: var(--dark-blue-testimonials-background);
+  position: relative;
+  z-index: 2;
+}
+
+.overlay-pattern {
+  position: absolute;
+  z-index: -1;
+  height: 270px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: url(../images/bg-curvy-desktop.svg);
+  background-position: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: round;
+}
+
+.hero-image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 710px;
+}
+
+.hero-bg h1 {
+  font-family: var(--heading-font);
+  color: var(--white);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-bg p {
+  font-family: var(--heading-font);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  width: 460px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.btn-get-started {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 16px 64px;
+  border-radius: 22px;
+  color: var(--white);
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    var(--cyan-inside-call-to-action-gradient),
+    var(--blue-inside-call-to-action-gradient)
+  );
+  display: block;
+  margin: 0 auto;
+}
