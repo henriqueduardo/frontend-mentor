@@ -1,0 +1,37 @@
+.productive-bg {
+  width: 100%;
+  height: auto;
+  background: var(--dark-blue-main-background);
+}
+
+.productive-content-box {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productive-content-text {
+  color: var(--white);
+}
+
+.productive-content-text h2 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.productive-content-text p {
+  font-size: 0.95rem;
+  font-family: var(--body-font);
+  margin-bottom: 20px;
+}
+
+.btn-productive {
+  color: var(--blue-inside-call-to-action-gradient);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: var(--body-font);
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--blue-inside-call-to-action-gradient);
+}
