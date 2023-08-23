@@ -37,3 +37,13 @@
   font-family: var(--body-font);
   color: var(--white);
 }
+
+.benefits-content img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
