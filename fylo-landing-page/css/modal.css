@@ -11,8 +11,8 @@
   justify-content: space-between;
   background: linear-gradient(
     90deg,
-    rgba(101, 226, 217, 1) 50%,
-    rgba(28, 34, 48, 1) 50%
+    var(--cyan-inside-call-to-action-gradient) 50%,
+    var(--dark-blue-testimonials-background) 50%
   );
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -228,21 +228,8 @@ input[type="radio"] {
   opacity: 0;
 }
 
-/* Exibir o ícone de marca de seleção quando o checkbox está marcado */
 .checkbox input[type="checkbox"]:checked + label::after {
   opacity: 1;
-}
-
-.checkbox a {
-  color: var(--white);
-  padding-bottom: 2px;
-  text-decoration: none;
-  border-bottom: 1px solid var(--white);
-}
-
-.checkbox a:hover {
-  color: var(--cyan-inside-call-to-action-gradient);
-  border-bottom: 1px solid var(--cyan-inside-call-to-action-gradient);
 }
 
 .checkbox .forgot-password {

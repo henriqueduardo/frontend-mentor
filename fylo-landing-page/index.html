@@ -22,7 +22,8 @@
   <body>
     <header class="header-bg">
       <nav class="container nav-menu">
-        <img src="images/logo.svg" alt="logo" />
+        <a href="#" class="logo">
+        </a>
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#team">Team</a></li>
@@ -31,6 +32,7 @@
               >Sign In</a
             >
           </li>
+          <li><button id="btn-theme" data-attributes="btn-toggle-theme">teste</button></li>
         </ul>
       </nav>
     </header>
@@ -210,11 +212,12 @@
 
     <footer class="footer-bg">
       <div class="container">
-        <img src="images/logo.svg" alt="Fylo logo" class="logo-footer" />
+        <a href="#" class="logo">
+        </a>
         <div class="footer-content-box">
           <div class="footer-content">
             <div class="footer-text">
-              <img src="images/icon-location.svg" alt="location icon" />
+              <figure class="location-icon"></figure>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laborum, delectus dolores alias optio nemo aperiam
@@ -308,18 +311,18 @@
           <input
             type="password"
             name="password"
-            id="password"
+            id="password-sign-up"
             placeholder="********"
           />
           <label for="email">Email</label>
           <input
             type="email"
             name="email"
-            id="email"
+            id="email-sign-up"
             placeholder="Yor email goes here"
           />
           <fieldset class="checkbox">
-            <input type="checkbox" value="check" name="terms" id="terms" />
+            <input type="checkbox" value="check" name="terms" id="terms-sign-up" />
             <label for="terms"
               >I agree all attachments in
               <a href="#">terms of service</a></label
@@ -327,7 +330,6 @@
           </fieldset>
           <nav class="nav-form">
             <button class="btn-sign-up">Sign Up</button>
-            <a href="#">I already have an account</a>
           </nav>
         </div>
         <div class="modal-form" id="login-content-sign-in">
@@ -335,18 +337,18 @@
           <input
             type="text"
             name="email"
-            id="email"
+            id="email-sign-in"
             placeholder="Enter your email goes here"
           />
           <label for="password">password</label>
           <input
             type="password"
             name="password"
-            id="password"
+            id="password-sign-in"
             placeholder="********"
           />
           <fieldset class="checkbox">
-            <input type="checkbox" value="check" name="terms" id="terms" />
+            <input type="checkbox" value="check" name="terms" id="terms-sign-in" />
             <label for="terms">Remember me</label>
             <a href="#" class="forgot-password">Forgot password?</a>
           </fieldset>

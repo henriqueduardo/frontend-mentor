@@ -38,8 +38,23 @@ body {
 
   --white: hsl(0, 0%, 100%);
 
+  --input: hsl(0, 0%, 100%);
   --heading-font: "Raleway", sans-serif;
   --body-font: "Open Sans", sans-serif;
+}
+
+.light-mode:root {
+  --dark-blue-intro-email-sign-up-background: hsl(210, 5%, 92%);
+  --dark-blue-main-background: #E3E3E3;
+  --dark-blue-footer-background: hsl(240, 8%, 79%);
+  --dark-blue-testimonials-background: #f7f7f7;
+
+  --cyan-inside-call-to-action-gradient: #65e2d9;
+  --blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+  --light-red-error: hsl(0, 100%, 63%);
+
+  --input: hsl(240, 8%, 79%);
+  --white: #1c1c1c;
 }
 
 .container {

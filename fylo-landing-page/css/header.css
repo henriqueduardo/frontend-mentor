@@ -10,9 +10,24 @@
   align-items: center;
 }
 
+.logo {
+  display: block;
+  height: 52px;
+  width: 176px;
+  background: url(../images/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo.light {
+  background: url(../images/logo-light.svg);
+}
+
 .nav-menu ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -25,6 +40,24 @@
 }
 
 .nav-menu ul li a:hover {
+  transition: 0.3s;
+  background: var(--dark-blue-footer-background);
+  border-radius: 4px;
+}
+
+#btn-theme {
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-weight: 400;
+  padding: 12px 24px;
+  background: transparent;
+}
+
+#btn-theme:hover {
   transition: 0.3s;
   background: var(--dark-blue-footer-background);
   border-radius: 4px;

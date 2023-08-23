@@ -18,7 +18,7 @@
   border-radius: 8px;
   position: relative;
   z-index: 10;
-  box-shadow: #12182488 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .testimonials-content-box .testimonials-content:first-child::before {

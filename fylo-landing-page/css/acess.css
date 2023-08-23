@@ -1,7 +1,11 @@
 .acess-bg {
   width: 100%;
   height: auto;
-  background: linear-gradient(0deg, rgba(12,21,36,1) 44%, rgba(24,30,42,1) 44%);
+  background: linear-gradient(
+    0deg,
+    var(--dark-blue-footer-background) 44%,
+    var(--dark-blue-main-background) 44%
+  );
 }
 
 .acess-bg h2 {
@@ -24,10 +28,10 @@
   display: block;
   margin: 0 auto;
   width: 850px;
-  background: #1C2230;
+  background: var(--dark-blue-intro-email-sign-up-background);
   padding: 40px 100px;
   border-radius: 8px;
-  box-shadow: #12182488 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .email-content {
@@ -41,7 +45,7 @@
 .form input {
   padding: 16px 16px;
   width: 450px;
-  background: var(--white);
+  background: var(--input);
   border-radius: 22px;
   outline: none;
   border: none;

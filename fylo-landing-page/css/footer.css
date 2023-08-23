@@ -1,7 +1,7 @@
 .footer-bg {
   width: 100%;
   height: auto;
-  background: #0c1524;
+  background: var(--dark-blue-footer-background);
 }
 
 .logo-footer {
@@ -14,6 +14,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .footer-content {
@@ -24,6 +25,22 @@
 .footer-text {
   display: flex;
   gap: 20px;
+}
+
+.location-icon {
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-location.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.location-icon.light {
+  background: url(../images/icon-location-light.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .footer-text img {
@@ -76,12 +93,20 @@
   content: "";
   background: url(../images/icon-email.svg);
   object-fit: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-position: center;
   height: 18px;
-  width: 18px;
+  width: 20px;
   top: 0;
   left: -30px;
+}
+
+.phone-link.light::before {
+  background: url(../images/icon-phone-light.svg);
+}
+
+.email-link.light::before {
+  background: url(../images/icon-email-light.svg);
 }
 
 .social-icons {

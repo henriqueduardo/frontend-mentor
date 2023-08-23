@@ -16,7 +16,19 @@
   background: url(../images/bg-curvy-desktop.svg);
   background-position: initial;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
+}
+
+.overlay-pattern.light {
+  position: absolute;
+  z-index: -1;
+  height: 270px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: url(../images/bg-curvy-desktop-light.svg);
+  background-position: initial;
+  background-size: cover;
   background-repeat: round;
 }
 
