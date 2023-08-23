@@ -24,8 +24,8 @@
       <nav class="container nav-menu">
         <img src="images/logo.svg" alt="logo" />
         <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Team</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
           <li>
             <a href="#" data-attributes="sign-in-button" id="btn-sign-in"
               >Sign In</a
@@ -54,7 +54,7 @@
       </div>
       <div class="overlay-pattern"></div>
     </main>
-    <section class="benefits-bg">
+    <section class="benefits-bg" id="features">
       <div class="container">
         <div class="benefits-content-box">
           <div class="benefits-content">
@@ -101,7 +101,7 @@
       </div>
     </section>
 
-    <section class="productive-bg">
+    <section class="productive-bg" id="team">
       <div class="container">
         <div class="productive-content-box">
           <img
@@ -309,7 +309,7 @@
             placeholder="Yor email goes here"
           />
           <fieldset class="checkbox">
-            <input type="checkbox" value="yes" name="terms" id="terms" />
+            <input type="checkbox" value="check" name="terms" id="terms" />
             <label for="terms"
               >I agree all attachments in
               <a href="#">terms of service</a></label
@@ -336,14 +336,23 @@
             placeholder="********"
           />
           <fieldset class="checkbox">
-            <input type="checkbox" value="yes" name="terms" id="terms" />
-            <label for="terms"
-              >I agree all attachments in
-              <a href="#">terms of service</a></label
-            >
+            <input type="checkbox" value="check" name="terms" id="terms" />
+            <label for="terms">Remember me</label>
+            <a href="#" class="forgot-password">Forgot password?</a>
           </fieldset>
-          <button>Sign Up</button>
-          <button>Create account</button>
+          <button class="btn-sign-in">Sign In</button>
+          <a href="#" class="register-now">Register now</a>
+          <nav class="login-buttons-box">
+            <div class="buttons-login">
+              <i class="bi bi-facebook"></i>
+              <span class="facebook-text">login with facebook</span>
+            </div>
+            <div class="buttons-login">
+              <i class="bi bi-github"></i>
+              <span class="github-text">login with github</span>
+            </div>
+          </nav>
+          
         </div>
       </form>
     </div>
