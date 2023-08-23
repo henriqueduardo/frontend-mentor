@@ -6,6 +6,7 @@
 @import url(testimonials.css);
 @import url(acess.css);
 @import url(footer.css);
+@import url(modal.css);
 
 * {
   padding: 0;
@@ -22,6 +23,7 @@ html {
 
 body {
   background: var(--dark-blue-main-background);
+  position: relative;
 }
 
 :root {
@@ -30,7 +32,7 @@ body {
   --dark-blue-footer-background: hsl(216, 53%, 9%);
   --dark-blue-testimonials-background: #21293c;
 
-  --cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+  --cyan-inside-call-to-action-gradient: #65e2d9;
   --blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
   --light-red-error: hsl(0, 100%, 63%);
 

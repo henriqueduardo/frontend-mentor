@@ -90,6 +90,8 @@
 }
 
 .social-icons li i {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   color: var(--white);
   font-size: 1rem;
