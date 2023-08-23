@@ -36,7 +36,9 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 710px;
+  height: 500px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .hero-bg h1 {

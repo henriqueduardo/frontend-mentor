@@ -64,5 +64,25 @@ function toggleTheme() {
   });
 }
 
+function animationScroll() {
+  const content = document.querySelectorAll("[data-attributes='scroll']");
+  const half = window.innerHeight * 1;
+
+  function initScroll() {
+    content.forEach((section) => {
+      const contentTop = section.getBoundingClientRect().top;
+      const contentVisible = (contentTop - half) < 0;
+      if (contentVisible)
+        section.classList.add("active");
+      else
+        section.classList.remove("active");
+    })
+  }
+
+  initScroll();
+  window.addEventListener('scroll', initScroll);
+}
+
 modal();
 toggleTheme();
+animationScroll();
