@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fylo dark landing-page front-end mentor challenge, developed by duardokinkong"
+    />
     <title>Fylo</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -22,7 +26,11 @@
         <ul>
           <li><a href="#">Features</a></li>
           <li><a href="#">Team</a></li>
-          <li><a href="#">Sign In</a></li>
+          <li>
+            <a href="#" data-attributes="sign-in-button" id="btn-sign-in"
+              >Sign In</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -206,10 +214,14 @@
           <div class="footer-content">
             <ul>
               <li>
-                <a href="tel:+1-543-123-4567" class="phone-link">+1-543-123-4567</a>
+                <a href="tel:+1-543-123-4567" class="phone-link"
+                  >+1-543-123-4567</a
+                >
               </li>
               <li>
-                <a href="mailto: example@fylo.com" class="email-link">example@fylo.com</a>
+                <a href="mailto: example@fylo.com" class="email-link"
+                  >example@fylo.com</a
+                >
               </li>
             </ul>
           </div>
@@ -245,8 +257,7 @@
           <div class="footer-content">
             <ul class="social-icons">
               <li>
-                <i class="bi bi-facebook">
-                </i>
+                <i class="bi bi-facebook"> </i>
               </li>
               <li>
                 <i class="bi bi-twitter"></i>
@@ -259,5 +270,84 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-overlay" data-attributes="overlay"></div>
+    <div class="modal" data-attributes="modal">
+      <div class="modal-text">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          corrupti!
+        </h2>
+        <img src="images/image-modal.svg" alt="image" />
+      </div>
+      <form class="modal-sign-in-up" data-attributes="form">
+        <input type="radio" name="login" value="SignIn" id="sign-in" checked />
+        <label for="sign-in" id="sign-in">Sign In</label>
+        <span class="or-span">or</span>
+        <input type="radio" name="login" value="SignUp" id="sign-up" />
+        <label for="sign-up" id="sign-up">Sign Up</label>
+        <div class="modal-form" id="login-content-sign-up">
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+          />
+          <label for="password">password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="********"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Yor email goes here"
+          />
+          <fieldset class="checkbox">
+            <input type="checkbox" value="yes" name="terms" id="terms" />
+            <label for="terms"
+              >I agree all attachments in
+              <a href="#">terms of service</a></label
+            >
+          </fieldset>
+          <nav class="nav-form">
+            <button class="btn-sign-up">Sign Up</button>
+            <a href="#">I already have an account</a>
+          </nav>
+        </div>
+        <div class="modal-form" id="login-content-sign-in">
+          <label for="email">email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email goes here"
+          />
+          <label for="password">password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="********"
+          />
+          <fieldset class="checkbox">
+            <input type="checkbox" value="yes" name="terms" id="terms" />
+            <label for="terms"
+              >I agree all attachments in
+              <a href="#">terms of service</a></label
+            >
+          </fieldset>
+          <button>Sign Up</button>
+          <button>Create account</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
