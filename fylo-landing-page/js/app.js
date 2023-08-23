@@ -66,30 +66,3 @@ function toggleTheme() {
 
 modal();
 toggleTheme();
-=======
-const modal = document.querySelector("[data-attributes='modal']");
-const overlay = document.querySelector("[data-attributes='overlay']");
-
-function showModal() {
-  modal.classList.add("active");
-  overlay.classList.add("active");
-}
-
-function closeModalOnEsc(event) {
-  if (event.key === "Escape") {
-    modal.classList.remove("active");
-    overlay.classList.remove("active");
-  }
-}
-
-function closeModalOutside(event) {
-  if (event.target === overlay) {
-    modal.classList.remove("active");
-    overlay.classList.remove("active");
-  }
-}
-
-document.querySelector("[data-attributes='sign-in-button']").addEventListener('click', showModal);
-document.addEventListener("keydown", closeModalOnEsc);
-document.addEventListener("click", closeModalOutside);
->>>>>>> 9542d39125a1e4d9c5ecfe97cdde6a8f2846273a
