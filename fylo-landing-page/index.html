@@ -20,9 +20,9 @@
     />
   </head>
   <body>
-    <header class="header-bg">
+    <header class="header-bg" aria-label="menu navigation">
       <nav class="container nav-menu">
-        <a href="#" class="logo"> </a>
+        <a href="#" class="logo" aria-label="fylo logo image"> </a>
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#team">Team</a></li>
@@ -32,25 +32,23 @@
             >
           </li>
           <li>
-            <button id="btn-theme" data-attributes="btn-toggle-theme">
-              teste
+            <button id="btn-theme" aria-label="button toggle themes dark/light">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle" data-attributes="btn-toggle-theme"></label>
             </button>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="hero-bg">
+    <main class="hero-bg" aria-label="main content">
       <div class="container">
         <img
           src="images/illustration-intro.png"
           alt="files illustration image"
           class="hero-image"
         />
-        <h1>
-          All your files in one secure location, <br />
-          accessible anywhere.
-        </h1>
+        <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>
           Fylo stores all your most important files in one secure location.
           Acess them wherever you need, share and collaborate with friends
@@ -60,7 +58,8 @@
       </div>
       <div class="overlay-pattern"></div>
     </main>
-    <section class="benefits-bg" id="features" data-attributes="scroll">
+
+    <section class="benefits-bg" id="features" data-attributes="scroll" aria-label="section benefits">
       <div class="container">
         <div class="benefits-content-box">
           <div class="benefits-content">
@@ -117,7 +116,7 @@
       </div>
     </section>
 
-    <section class="productive-bg" id="team" data-attributes="scroll">
+    <section class="productive-bg" id="team" data-attributes="scroll" aria-label="section productive">
       <div class="container">
         <div class="productive-content-box">
           <img
@@ -125,10 +124,7 @@
             alt="productive team"
           />
           <div class="productive-content-text">
-            <h2>
-              Stay productive, <br />
-              wherever you are
-            </h2>
+            <h2>Stay productive, wherever you are</h2>
             <p>
               Never let location be an issue when acessing your files. Fylo has
               you covered for all of your file storage needs.
@@ -143,7 +139,7 @@
       </div>
     </section>
 
-    <section class="testimonials-bg" data-attributes="scroll">
+    <section class="testimonials-bg" data-attributes="scroll" aria-label="testimonials">
       <div class="container">
         <div class="testimonials-content-box">
           <div class="testimonials-content">
@@ -192,7 +188,7 @@
       </div>
     </section>
 
-    <aside class="acess-bg" data-attributes="scroll">
+    <aside class="acess-bg" data-attributes="scroll" aria-label="acess">
       <div class="container">
         <form action="" aria-label="acess form" class="form">
           <h2>Get early acess today</h2>
@@ -214,9 +210,9 @@
       </div>
     </aside>
 
-    <footer class="footer-bg" data-attributes="scroll">
+    <footer class="footer-bg" data-attributes="scroll" aria-label="footer">
       <div class="container">
-        <a href="#" class="logo"> </a>
+        <a href="#" class="logo" aria-label="fylo logo image"> </a>
         <div class="footer-content-box">
           <div class="footer-content">
             <div class="footer-text">
@@ -228,7 +224,7 @@
             </div>
           </div>
           <div class="footer-content">
-            <ul>
+            <ul class="contact-list">
               <li>
                 <a href="tel:+1-543-123-4567" class="phone-link"
                   >+1-543-123-4567</a
@@ -297,10 +293,10 @@
         <img src="images/image-modal.svg" alt="image" />
       </div>
       <form class="modal-sign-in-up" data-attributes="form">
-        <input type="radio" name="login" value="SignIn" id="sign-in" checked />
+        <input type="radio" name="login" value="SignIn" id="sign-in" checked aria-label="input option to sign-in"/>
         <label for="sign-in" id="sign-in">Sign In</label>
         <span class="or-span">or</span>
-        <input type="radio" name="login" value="SignUp" id="sign-up" />
+        <input type="radio" name="login" value="SignUp" id="sign-up" aria-label="input option to sign-up"/>
         <label for="sign-up" id="sign-up">Sign Up</label>
         <div class="modal-form" id="login-content-sign-up">
           <label for="name">Full name</label>
@@ -309,6 +305,7 @@
             name="name"
             id="name"
             placeholder="Enter your full name"
+            aria-label="full name field"
           />
           <label for="password">password</label>
           <input
@@ -316,6 +313,7 @@
             name="password"
             id="password-sign-up"
             placeholder="********"
+            aria-label="password field"
           />
           <label for="email">Email</label>
           <input
@@ -323,6 +321,7 @@
             name="email"
             id="email-sign-up"
             placeholder="Yor email goes here"
+            aria-label="email field"
           />
           <fieldset class="checkbox">
             <input
@@ -330,6 +329,7 @@
               value="check"
               name="terms"
               id="terms-sign-up"
+              aria-label="terms field"
             />
             <label for="terms"
               >I agree all attachments in
@@ -337,7 +337,7 @@
             >
           </fieldset>
           <nav class="nav-form">
-            <button class="btn-sign-up">Sign Up</button>
+            <button class="btn-sign-up" aria-label="sign up button">Sign Up</button>
           </nav>
         </div>
         <div class="modal-form" id="login-content-sign-in">
@@ -347,6 +347,7 @@
             name="email"
             id="email-sign-in"
             placeholder="Enter your email goes here"
+            aria-label="email field"
           />
           <label for="password">password</label>
           <input
@@ -354,6 +355,7 @@
             name="password"
             id="password-sign-in"
             placeholder="********"
+            aria-label="password field"
           />
           <fieldset class="checkbox">
             <input
@@ -361,11 +363,12 @@
               value="check"
               name="terms"
               id="terms-sign-in"
+              aria-label="terms field"
             />
-            <label for="terms">Remember me</label>
-            <a href="#" class="forgot-password">Forgot password?</a>
+            <label for="terms" aria-label="remember account field">Remember me</label>
+            <a href="#" class="forgot-password" aria-label="recovery password field">Forgot password?</a>
           </fieldset>
-          <button class="btn-sign-in">Sign In</button>
+          <button class="btn-sign-in" aria-label="sign-in button">Sign In</button>
           <a href="#" class="register-now">Register now</a>
           <nav class="login-buttons-box">
             <div class="buttons-login">
@@ -380,6 +383,14 @@
         </div>
       </form>
     </div>
+
+    <button
+      class="btn-scroll-top"
+      name="button to top"
+      data-attributes="button-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
 
     <script src="js/app.js"></script>
   </body>

@@ -42,6 +42,9 @@
 }
 
 .hero-bg h1 {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
   font-family: var(--heading-font);
   color: var(--white);
   font-size: 2.5rem;
@@ -77,4 +80,15 @@
   );
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 530px) {
+  .hero-bg h1 {
+    font-size: 1.5rem;
+    width: auto;
+  }
+  .hero-bg p {
+    width: 300px;
+    font-size: 0.875rem;
+  }
 }

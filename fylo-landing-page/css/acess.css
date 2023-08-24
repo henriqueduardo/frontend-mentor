@@ -69,3 +69,39 @@
     var(--blue-inside-call-to-action-gradient)
   );
 }
+
+@media (max-width: 940px) {
+  .acess-bg h2 {
+    font-size: 2rem;
+  }
+  .form {
+    width: 450px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .email-content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .form input, .btn-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .acess-bg h2 {
+    font-size: 1.3rem;
+  }
+  .form {
+    padding: 20px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .form {
+    width: 335px;
+  }
+}

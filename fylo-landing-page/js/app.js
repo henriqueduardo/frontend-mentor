@@ -27,7 +27,8 @@ function modal() {
 }
 
 function toggleTheme() {
-  const buttonToggle = document.querySelector("[data-attributes='btn-toggle-theme']")
+  const buttonToggle = document.querySelector("[data-attributes='btn-toggle-theme']");
+  const checkbox = document.getElementById("theme-toggle");
 
   const html = document.querySelector("html");
   const overlayPattern = document.querySelector(".overlay-pattern");
@@ -37,6 +38,7 @@ function toggleTheme() {
   const locationIcon = document.querySelector(".location-icon");
 
   const savedTheme = localStorage.getItem("theme");
+  checkbox.checked = savedTheme === "light";
   document.documentElement.setAttribute("data-attributes", savedTheme);
 
   function updateTheme(theme) {
@@ -48,6 +50,11 @@ function toggleTheme() {
 
     logo.forEach((i) => {
       i.classList.toggle("light", theme === "light");
+    });
+
+    checkbox.addEventListener("click", () => {
+      const currentTheme = checkbox.checked ? "light" : "dark";
+      localStorage.setItem("theme", currentTheme);
     });
   }
 
@@ -83,6 +90,26 @@ function animationScroll() {
   window.addEventListener('scroll', initScroll);
 }
 
+function buttonToTop() {
+  const btnToTop = document.querySelector("[data-attributes='button-top']");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btnToTop.classList.add("active");
+    } else {
+      btnToTop.classList.remove("active");
+    }
+  });
+
+  btnToTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
 modal();
 toggleTheme();
 animationScroll();
+buttonToTop();

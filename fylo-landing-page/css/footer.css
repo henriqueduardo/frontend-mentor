@@ -71,7 +71,8 @@
   text-decoration: none;
 }
 
-.phone-link, .email-link {
+.phone-link,
+.email-link {
   position: relative;
 }
 
@@ -123,4 +124,28 @@
   border: 1px solid var(--white);
   padding: 8px;
   border-radius: 2rem;
+}
+
+@media (max-width: 950px) {
+  .footer-content-box {
+    flex-direction: column;
+    justify-content: start;
+    gap: 40px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .contact-list {
+    margin-left: 33px;
+  }
+  .phone-link,
+  .email-link {
+    padding-left: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-content-box {
+    margin-bottom: 0px;
+  }
 }

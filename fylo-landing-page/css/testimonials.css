@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-evenly;
   position: relative;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .testimonials-content {

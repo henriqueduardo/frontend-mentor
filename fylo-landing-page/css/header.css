@@ -22,6 +22,9 @@
 
 .logo.light {
   background: url(../images/logo-light.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .nav-menu ul {
@@ -46,19 +49,37 @@
 }
 
 #btn-theme {
-  font-size: 1rem;
   cursor: pointer;
-  outline: none;
   border: none;
-  color: var(--white);
-  font-family: var(--heading-font);
-  font-weight: 400;
-  padding: 12px 24px;
   background: transparent;
 }
 
-#btn-theme:hover {
-  transition: 0.3s;
-  background: var(--dark-blue-footer-background);
-  border-radius: 4px;
+@media (max-width: 800px) {
+  .nav-menu ul {
+    gap: 10px;
+  }
+  .nav-menu ul li a, #btn-theme {
+    padding: 12px 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo,
+  .logo.light {
+    width: 100px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo,
+  .logo.light {
+    width: 60px;
+  }
+  .nav-menu ul {
+    gap: 5px;
+  }
+  .nav-menu ul li a, #btn-theme {
+    padding: 6px 6px;
+  }
 }
