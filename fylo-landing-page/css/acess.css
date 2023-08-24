@@ -73,9 +73,10 @@
 @media (max-width: 940px) {
   .acess-bg h2 {
     font-size: 2rem;
+    margin-bottom: 20px;
   }
   .form {
-    width: 450px;
+    width: 100%;
     padding: 40px 40px;
     display: flex;
     flex-direction: column;
@@ -96,12 +97,20 @@
   }
   .form {
     padding: 20px;
-    width: 350px;
   }
 }
 
 @media (max-width: 420px) {
   .form {
     width: 335px;
+  }
+}
+
+@media (max-width: 390px) {
+  .form {
+    width: 300px;
+  }
+  .acess-bg p {
+    font-size: 0.6rem;
   }
 }

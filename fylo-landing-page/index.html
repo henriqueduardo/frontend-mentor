@@ -330,10 +330,7 @@
     <div class="modal-overlay" data-attributes="overlay"></div>
     <div class="modal" data-attributes="modal">
       <div class="modal-text">
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-          corrupti!
-        </h2>
+        <h2>All your files in one secure location, accessible anywhere.</h2>
         <img src="images/image-modal.svg" alt="image" />
       </div>
       <form class="modal-sign-in-up" data-attributes="form">
@@ -343,7 +340,8 @@
           value="SignIn"
           id="sign-in"
           checked
-          aria-label="input option to sign-in"
+          aria-labelledby="sign-in-label"
+          aria-describedby="sign-in option"
         />
         <label for="sign-in" id="sign-in">Sign In</label>
         <span class="or-span">or</span>
@@ -353,6 +351,8 @@
           value="SignUp"
           id="sign-up"
           aria-label="input option to sign-up"
+          aria-labelledby="sign-up-label"
+          aria-describedby="sign-up option"
         />
         <label for="sign-up" id="sign-up">Sign Up</label>
         <div class="modal-form" id="login-content-sign-up">
@@ -388,10 +388,10 @@
               id="terms-sign-up"
               aria-label="terms field"
             />
-            <label for="terms"
-              >I agree all attachments in
-              <a href="#">terms of service</a></label
-            >
+            <label for="terms">
+              I agree all attachments in
+              <a href="#">terms of service</a>
+            </label>
           </fieldset>
           <nav class="nav-form">
             <button class="btn-sign-up" aria-label="sign up button">
@@ -417,16 +417,6 @@
             aria-label="password field"
           />
           <fieldset class="checkbox">
-            <input
-              type="checkbox"
-              value="check"
-              name="terms"
-              id="terms-sign-in"
-              aria-label="terms field"
-            />
-            <label for="terms" aria-label="remember account field"
-              >Remember me</label
-            >
             <a
               href="#"
               class="forgot-password"
@@ -437,7 +427,6 @@
           <button class="btn-sign-in" aria-label="sign-in button">
             Sign In
           </button>
-          <a href="#" class="register-now">Register now</a>
           <nav class="login-buttons-box">
             <div class="buttons-login">
               <i class="bi bi-facebook"></i>

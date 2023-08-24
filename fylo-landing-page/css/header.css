@@ -58,7 +58,8 @@
   .nav-menu ul {
     gap: 10px;
   }
-  .nav-menu ul li a, #btn-theme {
+  .nav-menu ul li a,
+  #btn-theme {
     padding: 12px 12px;
   }
 }
@@ -79,7 +80,20 @@
   .nav-menu ul {
     gap: 5px;
   }
-  .nav-menu ul li a, #btn-theme {
+  .nav-menu ul li a,
+  #btn-theme {
     padding: 6px 6px;
+  }
+}
+
+@media (max-width: 385px) {
+  .nav-menu ul li a {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .logo, .logo.light {
+    width: 45px;
   }
 }

@@ -62,6 +62,7 @@
   height: 415px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -172,7 +173,6 @@ input[type="radio"] {
   outline: none;
   border: none;
   display: flex;
-  justify-content: space-between;
   gap: 10px;
   align-items: center;
   font-size: 0.875rem;
@@ -191,45 +191,7 @@ input[type="radio"] {
   padding: 0;
   margin-bottom: 0;
   border: none;
-}
-
-.checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.checkbox label {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-}
-
-.checkbox label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #a9a9a9;
-  background-color: #fff;
-}
-
-.checkbox input[type="checkbox"]:checked + label::before {
-  background-color: var(--cyan-inside-call-to-action-gradient);
-}
-
-.checkbox label::after {
-  content: "✓";
-  position: absolute;
-  left: 5px;
-  top: 0px;
-  font-size: 14px;
-  color: #212121;
-  opacity: 0;
-}
-
-.checkbox input[type="checkbox"]:checked + label::after {
-  opacity: 1;
+  accent-color: var(--cyan-inside-call-to-action-gradient);
 }
 
 .checkbox .forgot-password {
@@ -243,6 +205,11 @@ input[type="radio"] {
 
 .checkbox .forgot-password:hover {
   border-bottom: none;
+  color: var(--white);
+}
+
+.checkbox label a {
+  text-decoration: none;
   color: var(--white);
 }
 
@@ -284,6 +251,7 @@ input[type="radio"] {
 }
 
 .btn-sign-in {
+  margin-top: 10px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -300,20 +268,8 @@ input[type="radio"] {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.register-now {
-  margin-top: 12px;
-  font-family: var(--body-font);
-  font-size: 0.875rem;
-  color: #a9a9a9;
-  text-decoration: none;
-}
-
-.register-now:hover {
-  transition: 0.3s;
-  color: var(--white);
-}
-
 .login-buttons-box {
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -373,4 +329,73 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   border-radius: 0px 4px 4px 0px;
+}
+
+@media (max-width: 1050px) {
+  .modal {
+    width: 850px;
+  }
+  .buttons-login {
+    font-size: 0.5rem;
+  }
+  .facebook-text, .github-text {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .modal {
+    width: 750px;
+  }
+  .facebook-text, .github-text {
+    padding: 0px 04px;
+  }
+}
+
+@media (max-width: 775px) {
+  .modal {
+    width: 550px;
+    flex-direction: column;
+    background: var(--dark-blue-testimonials-background);
+    padding: 40px 40px;
+  }
+  .modal-text h2, .modal-text img {
+    display: none;
+  }
+  .modal-sign-in-up, .modal-text{
+    width: 100%;
+  }
+  .login-buttons-box {
+    justify-content: start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal {
+    width: 350px;
+  }
+  .checkbox label {
+    font-size: 10px;
+  }
+  .facebook-text, .github-text {
+    display: none;
+  }
+  .buttons-login .bi-facebook, .buttons-login .bi-github {
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+}
+
+
+@media (max-width: 365px) {
+  .modal {
+    width: 300px;
+  }
 }
