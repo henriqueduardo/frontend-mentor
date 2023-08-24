@@ -33,8 +33,11 @@
           </li>
           <li>
             <button id="btn-theme" aria-label="button toggle themes dark/light">
-                <input type="checkbox" id="theme-toggle">
-                <label for="theme-toggle" data-attributes="btn-toggle-theme"></label>
+              <input type="checkbox" id="theme-toggle" />
+              <label
+                for="theme-toggle"
+                data-attributes="btn-toggle-theme"
+              ></label>
             </button>
           </li>
         </ul>
@@ -47,6 +50,8 @@
           src="images/illustration-intro.png"
           alt="files illustration image"
           class="hero-image"
+          width="1117"
+          height="500"
         />
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>
@@ -59,7 +64,12 @@
       <div class="overlay-pattern"></div>
     </main>
 
-    <section class="benefits-bg" id="features" data-attributes="scroll" aria-label="section benefits">
+    <section
+      class="benefits-bg"
+      id="features"
+      data-attributes="scroll"
+      aria-label="section benefits"
+    >
       <div class="container">
         <div class="benefits-content-box">
           <div class="benefits-content">
@@ -67,6 +77,8 @@
               src="images/icon-access-anywhere.svg"
               alt="acess anywhere place"
               class="vert-move"
+              width="83"
+              height="78"
             />
             <h2>Acess your files, anywhere</h2>
             <p>
@@ -79,6 +91,8 @@
               src="images/icon-security.svg"
               alt="security"
               class="vert-move"
+              width="70"
+              height="88"
             />
             <h2>Security you can trust</h2>
             <p>
@@ -92,6 +106,8 @@
               src="images/icon-collaboration.svg"
               alt="real time collaboration"
               class="vert-move"
+              width="86"
+              height="71"
             />
             <h2>Real-time collaboration</h2>
             <p>
@@ -104,6 +120,8 @@
               src="images/icon-any-file.svg"
               alt="acess anywhere place"
               class="vert-move"
+              width="91"
+              height="64"
             />
             <h2>Store any type of file</h2>
             <p>
@@ -116,12 +134,19 @@
       </div>
     </section>
 
-    <section class="productive-bg" id="team" data-attributes="scroll" aria-label="section productive">
+    <section
+      class="productive-bg"
+      id="team"
+      data-attributes="scroll"
+      aria-label="section productive"
+    >
       <div class="container">
         <div class="productive-content-box">
           <img
             src="images/illustration-stay-productive.png"
             alt="productive team"
+            width="615"
+            height="465"
           />
           <div class="productive-content-text">
             <h2>Stay productive, wherever you are</h2>
@@ -139,7 +164,11 @@
       </div>
     </section>
 
-    <section class="testimonials-bg" data-attributes="scroll" aria-label="testimonials">
+    <section
+      class="testimonials-bg"
+      data-attributes="scroll"
+      aria-label="testimonials"
+    >
       <div class="container">
         <div class="testimonials-content-box">
           <div class="testimonials-content">
@@ -149,7 +178,12 @@
               collaboration machine.
             </p>
             <div class="person-content-box">
-              <img src="images/profile-1.jpg" alt="Saith Patel" />
+              <img
+                src="images/profile-1.jpg"
+                alt="Saith Patel"
+                width="36"
+                height="36"
+              />
               <div class="person-content-text">
                 <h3>Satish Patel</h3>
                 <span>Founder & CEO, Huddle</span>
@@ -163,7 +197,12 @@
               collaboration machine.
             </p>
             <div class="person-content-box">
-              <img src="images/profile-2.jpg" alt="Saith Patel" />
+              <img
+                src="images/profile-2.jpg"
+                alt="Saith Patel"
+                width="36"
+                height="36"
+              />
               <div class="person-content-text">
                 <h3>Bruce McKenzie</h3>
                 <span>Founder & CEO, Huddle</span>
@@ -177,7 +216,12 @@
               collaboration machine.
             </p>
             <div class="person-content-box">
-              <img src="images/profile-3.jpg" alt="Saith Patel" />
+              <img
+                src="images/profile-3.jpg"
+                alt="Saith Patel"
+                width="36"
+                height="36"
+              />
               <div class="person-content-text">
                 <h3>Iva Boyd</h3>
                 <span>Founder & CEO, Huddle</span>
@@ -293,10 +337,23 @@
         <img src="images/image-modal.svg" alt="image" />
       </div>
       <form class="modal-sign-in-up" data-attributes="form">
-        <input type="radio" name="login" value="SignIn" id="sign-in" checked aria-label="input option to sign-in"/>
+        <input
+          type="radio"
+          name="login"
+          value="SignIn"
+          id="sign-in"
+          checked
+          aria-label="input option to sign-in"
+        />
         <label for="sign-in" id="sign-in">Sign In</label>
         <span class="or-span">or</span>
-        <input type="radio" name="login" value="SignUp" id="sign-up" aria-label="input option to sign-up"/>
+        <input
+          type="radio"
+          name="login"
+          value="SignUp"
+          id="sign-up"
+          aria-label="input option to sign-up"
+        />
         <label for="sign-up" id="sign-up">Sign Up</label>
         <div class="modal-form" id="login-content-sign-up">
           <label for="name">Full name</label>
@@ -337,7 +394,9 @@
             >
           </fieldset>
           <nav class="nav-form">
-            <button class="btn-sign-up" aria-label="sign up button">Sign Up</button>
+            <button class="btn-sign-up" aria-label="sign up button">
+              Sign Up
+            </button>
           </nav>
         </div>
         <div class="modal-form" id="login-content-sign-in">
@@ -365,10 +424,19 @@
               id="terms-sign-in"
               aria-label="terms field"
             />
-            <label for="terms" aria-label="remember account field">Remember me</label>
-            <a href="#" class="forgot-password" aria-label="recovery password field">Forgot password?</a>
+            <label for="terms" aria-label="remember account field"
+              >Remember me</label
+            >
+            <a
+              href="#"
+              class="forgot-password"
+              aria-label="recovery password field"
+              >Forgot password?</a
+            >
           </fieldset>
-          <button class="btn-sign-in" aria-label="sign-in button">Sign In</button>
+          <button class="btn-sign-in" aria-label="sign-in button">
+            Sign In
+          </button>
           <a href="#" class="register-now">Register now</a>
           <nav class="login-buttons-box">
             <div class="buttons-login">
