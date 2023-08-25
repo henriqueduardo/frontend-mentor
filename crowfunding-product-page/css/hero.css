@@ -295,6 +295,11 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
+.btn-reward:hover {
+  transition: 0.3s;
+  background: var(--dark-cyan);
+}
+
 .rewards-bg:last-child .btn-reward {
   background: var(--dark-gray);
   cursor: not-allowed;

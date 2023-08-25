@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 @import url(header.css);
 @import url(hero.css);
+@import url(modal.css);
 
 * {
   margin: 0;
