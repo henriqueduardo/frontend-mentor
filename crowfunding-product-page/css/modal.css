@@ -4,7 +4,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999;
+  z-index: 998;
   background: var(--white);
   padding: 30px 40px 30px 40px;
   width: 750px;
@@ -19,12 +19,31 @@
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.btn-close-modal {
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  background: url(../images/icon-close-modal.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
 .modal::-webkit-scrollbar {
   width: 8px; /* Largura da barra de rolagem */
 }
 
 .modal::-webkit-scrollbar-thumb {
-  background-color: var(--dark-gray);
+  background: linear-gradient(
+    0deg,
+    rgba(206, 206, 206, 0.616) 51%,
+    var(--white) 51%
+  );
   border-radius: 6px;
   border-left: 1px solid var(--white);
   border-right: 1px solid var(--white);
@@ -49,8 +68,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 997;
   display: none;
 }
 
@@ -197,6 +216,67 @@
 }
 
 .faq-content-price button:hover {
+  transition: 0.3s;
+  background: var(--dark-cyan);
+}
+
+.modal-sucess {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: var(--white);
+  padding: 30px 40px 30px 40px;
+  width: 530px;
+  margin: 0 auto;
+  border: 6px solid var(--white);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  height: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  text-align: center;
+}
+
+.modal-sucess.active {
+  display: block !important;
+}
+
+.modal-sucess img {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-sucess h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+.modal-sucess p {
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.modal-sucess .btn-sucess {
+  outline: none;
+  border: none;
+  padding: 16px 30px;
+  border-radius: 30px;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  background: var(--moderate-cyan);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.modal-sucess .btn-sucess:hover {
   transition: 0.3s;
   background: var(--dark-cyan);
 }

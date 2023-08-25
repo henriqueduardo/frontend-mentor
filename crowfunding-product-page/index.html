@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front-end mentor challenge Crowdfunding product page developed by duardokingkong"
+    />
     <title>Crowfund</title>
     <link
       rel="shortcut icon"
@@ -14,7 +18,12 @@
   <body>
     <header class="header-bg" aria-label="header menu">
       <nav class="container nav-menu">
-        <a href="#" class="logo-header" alt="Crowfund logo"></a>
+        <a
+          href="#"
+          class="logo-header"
+          alt="Crowfund logo"
+          aria-label="logo image"
+        ></a>
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Discover</a></li>
@@ -32,7 +41,9 @@
             strain.
           </p>
           <nav class="hero-content-intro-nav">
-            <button class="btn-project" data-attributes="button">Back this project</button>
+            <button class="btn-project" data-attributes="button">
+              Back this project
+            </button>
             <button class="btn-bookmarked">Bookmarked</button>
           </nav>
         </div>
@@ -67,7 +78,9 @@
             </p>
             <nav>
               <span>101</span>
-              <button class="btn-reward" data-attributes="button">Select Reward</button>
+              <button class="btn-reward" data-attributes="button">
+                Select Reward
+              </button>
             </nav>
           </div>
           <div class="rewards-bg">
@@ -79,7 +92,9 @@
             </p>
             <nav>
               <span>64</span>
-              <button class="btn-reward" data-attributes="button">Select Reward</button>
+              <button class="btn-reward" data-attributes="button">
+                Select Reward
+              </button>
             </nav>
           </div>
           <div class="rewards-bg">
@@ -100,6 +115,7 @@
 
     <div class="modal-overlay" data-attributes="modal-overlay"></div>
     <div class="modal" data-attributes="modal">
+      <button class="btn-close-modal"></button>
       <h2>Back this project</h2>
       <p>
         Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
@@ -108,8 +124,15 @@
       <div class="modal-content">
         <div class="modal-options">
           <div class="input-container">
-            <input type="radio" name="reward" id="noReward" data-attributes="radio"/>
-            <label for="noReward" data-attributes="label">Pledge with no reward</label>
+            <input
+              type="radio"
+              name="reward"
+              id="noReward"
+              data-attributes="radio"
+            />
+            <label for="noReward" data-attributes="label"
+              >Pledge with no reward</label
+            >
           </div>
           <p>
             Choose to support us without a reward if you simply believe in our
@@ -122,7 +145,7 @@
           <div>
             <div class="faq-content-price">
               <p>0</p>
-              <button>Continue</button>
+              <button data-attributes="btn-continue">Continue</button>
             </div>
           </div>
         </div>
@@ -130,8 +153,15 @@
       <div class="modal-content">
         <div class="modal-options">
           <div class="input-container">
-            <input type="radio" name="reward" id="BambooStand" data-attributes="radio"/>
-            <label for="BambooStand" data-attributes="label">Bamboo Stand</label>
+            <input
+              type="radio"
+              name="reward"
+              id="BambooStand"
+              data-attributes="radio"
+            />
+            <label for="BambooStand" data-attributes="label"
+              >Bamboo Stand</label
+            >
           </div>
           <p>
             You get an ergonomic stand made of natural bamboo. You've helped us
@@ -144,7 +174,7 @@
           <div>
             <div class="faq-content-price">
               <p>25</p>
-              <button>Continue</button>
+              <button data-attributes="btn-continue">Continue</button>
             </div>
           </div>
         </div>
@@ -152,8 +182,15 @@
       <div class="modal-content">
         <div class="modal-options">
           <div class="input-container">
-            <input type="radio" name="reward" id="BlackStand" data-attributes="radio"/>
-            <label for="BlackStand" data-attributes="label">Black Edition Stand</label>
+            <input
+              type="radio"
+              name="reward"
+              id="BlackStand"
+              data-attributes="radio"
+            />
+            <label for="BlackStand" data-attributes="label"
+              >Black Edition Stand</label
+            >
           </div>
           <p>
             You get a Black Special Edition computer stand a personal thank you.
@@ -165,7 +202,7 @@
           <div>
             <div class="faq-content-price">
               <p>75</p>
-              <button>Continue</button>
+              <button data-attributes="btn-continue">Continue</button>
             </div>
           </div>
         </div>
@@ -183,6 +220,13 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <div class="modal-sucess" data-attributes="modal-sucess">
+      <img src="images/icon-check.svg" alt="sucess icon" aria-label="sucess message">
+      <h2>Thanks for your support!</h2>
+      <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
+      <button class="btn-sucess"data-attributes="btn-got-it" >Got it!</button>
     </div>
 
     <script src="js/app.js"></script>
