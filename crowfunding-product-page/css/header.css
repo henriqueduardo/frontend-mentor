@@ -1,0 +1,37 @@
+.header-bg {
+  width: 100%;
+  height: 55vh;
+  background: url(../images/image-hero-desktop.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-header {
+  background: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 125px;
+  height: 60px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 12px 16px;
+  color: var(--white);
+  /* text-shadow: 1px 1px 2px rgba(0,0,0,0.5); */
+}
