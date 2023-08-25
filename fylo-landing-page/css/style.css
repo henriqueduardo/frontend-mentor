@@ -30,7 +30,7 @@ body {
 :root {
   --dark-blue-intro-email-sign-up-background: hsl(217, 28%, 15%);
   --dark-blue-main-background: hsl(218, 28%, 13%);
-  --dark-blue-footer-background: hsl(216, 53%, 9%);
+  --dark-blue-footer-background: #0B1523;
   --dark-blue-testimonials-background: #21293c;
 
   --cyan-inside-call-to-action-gradient: #65e2d9;
