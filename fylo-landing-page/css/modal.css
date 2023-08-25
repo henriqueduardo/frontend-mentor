@@ -159,6 +159,15 @@ input[type="radio"] {
   border-bottom: 1px solid #a9a9a9;
 }
 
+.modal-form input:-webkit-autofill,
+.modal-form input:-webkit-autofill:hover,
+.modal-form input:-webkit-autofill:focus {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px var(--dark-blue-testimonials-background);
+}
+
 .modal-form input:focus {
   transition: 0.3s;
   border-bottom: 1px solid var(--cyan-inside-call-to-action-gradient);
@@ -338,7 +347,8 @@ input[type="radio"] {
   .buttons-login {
     font-size: 0.5rem;
   }
-  .facebook-text, .github-text {
+  .facebook-text,
+  .github-text {
     padding: 0px 10px;
   }
 }
@@ -347,8 +357,9 @@ input[type="radio"] {
   .modal {
     width: 750px;
   }
-  .facebook-text, .github-text {
-    padding: 0px 04px;
+  .facebook-text,
+  .github-text {
+    padding: 0px 06px;
   }
 }
 
@@ -359,21 +370,31 @@ input[type="radio"] {
     background: var(--dark-blue-testimonials-background);
     padding: 40px 40px;
   }
-  .modal-text h2, .modal-text img {
+  .modal-text h2,
+  .modal-text img {
     display: none;
   }
-  .modal-sign-in-up, .modal-text{
+  .modal-sign-in-up,
+  .modal-text {
     width: 100%;
   }
   .login-buttons-box {
     justify-content: start;
     gap: 20px;
   }
+  .facebook-text,
+  .github-text {
+    padding: 0px 16px;
+  }
 }
 
 @media (max-width: 600px) {
   .modal {
     width: 400px;
+  }
+  .facebook-text,
+  .github-text {
+    padding: 0px 8px;
   }
 }
 
@@ -384,15 +405,16 @@ input[type="radio"] {
   .checkbox label {
     font-size: 10px;
   }
-  .facebook-text, .github-text {
+  .facebook-text,
+  .github-text {
     display: none;
   }
-  .buttons-login .bi-facebook, .buttons-login .bi-github {
+  .buttons-login .bi-facebook,
+  .buttons-login .bi-github {
     border-radius: 4px;
     padding: 10px 20px;
   }
 }
-
 
 @media (max-width: 365px) {
   .modal {
