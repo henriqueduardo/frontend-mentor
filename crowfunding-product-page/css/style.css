@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 @import url(header.css);
+@import url(hero.css);
 
 * {
   margin: 0;
@@ -15,11 +16,13 @@ html {
 }
 
 :root {
-  --moderate-cyan: hsl(176, 50%, 47%);
-  --dark-cyan: hsl(176, 72%, 28%);
+  --moderate-cyan: #3cb4ac;
+  --dark-cyan: #147b74;
   --black: hsl(0, 0%, 0%);
   --dark-gray: hsl(0, 0%, 48%);
+  --light-gray: #F4F8F9;
   --white: #ffffff;
+  --main-background: #FAFAFA;
 
   --normal-fsize: 1rem;
 }

@@ -1,0 +1,301 @@
+.hero-bg {
+  width: 100%;
+  height: auto;
+  background: var(--main-background);
+}
+
+.hero-content-intro {
+  background: var(--white);
+  padding: 40px 40px;
+  text-align: center;
+  width: 650px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
+  position: relative;
+  top: -100px;
+  z-index: 1;
+}
+
+.hero-content-intro::before {
+  content: "";
+  position: absolute;
+  background: url(../images/logo-mastercraft.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 52px;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.hero-content-intro h1 {
+  font-size: 1.8rem;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.hero-content-intro p {
+  margin-top: 20px;
+  font-size: var(--normal-fsize);
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+.hero-content-intro-nav {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-project {
+  outline: none;
+  border: none;
+  padding: 16px 22px;
+  border-radius: 30px;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  background: var(--moderate-cyan);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.btn-project:hover {
+  transition: 0.3s;
+  background: var(--dark-cyan);
+}
+
+.btn-bookmarked {
+  outline: none;
+  border: none;
+  padding: 16px 22px 16px 56px;
+  border-radius: 30px;
+  color: var(--dark-cyan);
+  font-weight: 700;
+  text-align: center;
+  background: var(--light-gray);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  position: relative;
+}
+
+.btn-bookmarked::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  background: url(../images/icon-bookmark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 2rem;
+  height: 47px;
+  width: 60px;
+}
+
+.hero-content-price {
+  background: var(--white);
+  padding: 40px 40px;
+  text-align: center;
+  width: 650px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
+  position: relative;
+  top: -70px;
+}
+
+.hero-content-price ul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+}
+
+.hero-content-price ul li span {
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+  border-right: 1px solid rgb(212, 211, 211);
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+.hero-content-price ul li:first-child span {
+  padding-left: 0;
+}
+
+.hero-content-price ul li:last-child span {
+  border-right: none;
+}
+
+.hero-content-price ul li:first-child span::before {
+  content: "of $100,000 backed";
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: 0.875rem;
+  bottom: 0px;
+  position: absolute;
+}
+
+.hero-content-price ul li:nth-child(2) span::before {
+  content: "total backers";
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: 0.875rem;
+  bottom: 0px;
+  position: absolute;
+}
+
+.hero-content-price ul li:last-child span::before {
+  content: "days left";
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: 0.875rem;
+  bottom: 0px;
+  position: absolute;
+}
+
+.price-bar {
+  margin-top: 60px;
+  height: 15px;
+  width: 100%;
+  background: rgb(244, 244, 244);
+  background: linear-gradient(
+    270deg,
+    rgba(244, 244, 244, 1) 29%,
+    rgba(60, 180, 172, 1) 29%
+  );
+  border-radius: 22px;
+}
+
+.hero-content-about {
+  background: var(--white);
+  padding: 40px 40px;
+  width: 650px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
+  position: relative;
+  top: -40px;
+}
+
+.hero-content-about h2 {
+  color: var(--black);
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.hero-content-about p {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.rewards-bg {
+  background: var(--white);
+  padding: 30px 40px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(206, 206, 206, 0.616);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.rewards-bg:last-child {
+  opacity: 0.4;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.rewards-bg h3 {
+  font-size: 1rem;
+  color: var(--black);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.rewards-bg h3::before {
+  content: "Pledge $25 or more";
+  position: absolute;
+  font-size: 0.9rem;
+  right: 0;
+  bottom: 0;
+  color: var(--moderate-cyan);
+  font-weight: 500;
+}
+
+.rewards-bg:nth-of-type(2) h3::before {
+  content: "Pledge $75 or more";
+  position: absolute;
+  font-size: 0.9rem;
+  right: 0;
+  bottom: 0;
+  color: var(--moderate-cyan);
+  font-weight: 500;
+}
+
+.rewards-bg:last-child h3::before {
+  content: "Pledge $200 or more";
+  position: absolute;
+  font-size: 0.9rem;
+  right: 0;
+  bottom: 0;
+  color: var(--moderate-cyan);
+  font-weight: 500;
+}
+
+.rewards-bg p {
+  margin-bottom: 30px;
+}
+
+.rewards-bg nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rewards-bg nav span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+  position: relative;
+}
+
+.rewards-bg nav span::before {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  color: var(--dark-gray);
+  font-size: 0.875rem;
+  font-weight: 500;
+  content: "left";
+}
+
+.btn-reward {
+  outline: none;
+  border: none;
+  padding: 16px 22px;
+  border-radius: 30px;
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  background: var(--moderate-cyan);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.rewards-bg:last-child .btn-reward {
+  background: var(--dark-gray);
+  cursor: not-allowed;
+}
