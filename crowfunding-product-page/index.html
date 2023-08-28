@@ -32,10 +32,11 @@
       </nav>
       <nav class="container nav-menu-mobile">
         <div class="menu-mobile-content">
-          <a href="#" class="menu-mobile-logo"></a>
+          <a href="#" class="menu-mobile-logo" aria-label="logo image"></a>
           <button
             class="menu-hamburguer"
             data-attributes="button-menu-mobile"
+            aria-label="menu hamburguer mobile"
           ></button>
         </div>
         <ul class="menu-mobile-list" data-attributes="menu-mobile">
@@ -63,7 +64,10 @@
               Back this project
             </button>
             <button class="btn-bookmarked">Bookmarked</button>
-            <button class="btn-bookmarked-mobile"></button>
+            <button
+              class="btn-bookmarked-mobile"
+              aria-label="bookmarked button"
+            ></button>
           </nav>
         </div>
         <div class="hero-content-price">
@@ -165,7 +169,7 @@
           <p>Enter your pledge</p>
           <div>
             <div class="faq-content-price">
-              <p>0</p>
+              <input type="number" value="0" />
               <button data-attributes="btn-continue">Continue</button>
             </div>
           </div>
@@ -194,7 +198,7 @@
           <p>Enter your pledge</p>
           <div>
             <div class="faq-content-price">
-              <p>25</p>
+              <input type="number" value="25" />
               <button data-attributes="btn-continue">Continue</button>
             </div>
           </div>
@@ -222,7 +226,7 @@
           <p>Enter your pledge</p>
           <div>
             <div class="faq-content-price">
-              <p>75</p>
+              <input type="number" value="75" />
               <button data-attributes="btn-continue">Continue</button>
             </div>
           </div>
