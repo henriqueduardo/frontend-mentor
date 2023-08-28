@@ -91,5 +91,29 @@ function initAccordion() {
   });
 }
 
+function initMenuMobile() {
+  const menuHamburguer = document.querySelector("[data-attributes='button-menu-mobile']");
+  const menuHamburguerContent = document.querySelector("[data-attributes='menu-mobile']")
+  const overlay = document.querySelector("[data-attributes='menu-mobile-overlay']");
+
+  function openMenuMobile() {
+    menuHamburguer.classList.toggle("active");
+    overlay.classList.toggle("active");
+    menuHamburguerContent.classList.toggle("active");
+  }
+
+  function closeMenuMobileOutside(event) {
+    if (event.target === overlay) {
+      menuHamburguer.classList.remove("active");
+      menuHamburguerContent.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+  }
+
+  menuHamburguer.addEventListener("click", openMenuMobile);
+  document.addEventListener("click", closeMenuMobileOutside);
+}
+
 initModal();
 initAccordion();
+initMenuMobile();

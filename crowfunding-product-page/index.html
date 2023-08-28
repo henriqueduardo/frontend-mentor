@@ -30,6 +30,24 @@
           <li><a href="#">Get Started</a></li>
         </ul>
       </nav>
+      <nav class="container nav-menu-mobile">
+        <div class="menu-mobile-content">
+          <a href="#" class="menu-mobile-logo"></a>
+          <button
+            class="menu-hamburguer"
+            data-attributes="button-menu-mobile"
+          ></button>
+        </div>
+        <ul class="menu-mobile-list" data-attributes="menu-mobile">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
+      </nav>
+      <div
+        class="menu-mobile-overlay"
+        data-attributes="menu-mobile-overlay"
+      ></div>
     </header>
 
     <main class="hero-bg" aria-label="main content">
@@ -45,6 +63,7 @@
               Back this project
             </button>
             <button class="btn-bookmarked">Bookmarked</button>
+            <button class="btn-bookmarked-mobile"></button>
           </nav>
         </div>
         <div class="hero-content-price">
@@ -53,7 +72,9 @@
             <li><span>5,007</span></li>
             <li><span>56</span></li>
           </ul>
-          <div class="price-bar"></div>
+          <div class="progress">
+            <div class="progress-animation"></div>
+          </div>
         </div>
         <div class="hero-content-about">
           <h2>About this project</h2>
@@ -223,10 +244,18 @@
     </div>
 
     <div class="modal-sucess" data-attributes="modal-sucess">
-      <img src="images/icon-check.svg" alt="sucess icon" aria-label="sucess message">
+      <img
+        src="images/icon-check.svg"
+        alt="sucess icon"
+        aria-label="sucess message"
+      />
       <h2>Thanks for your support!</h2>
-      <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
-      <button class="btn-sucess"data-attributes="btn-got-it" >Got it!</button>
+      <p>
+        Your pledge brings us one step closer to sharing Mastercraft Bamboo
+        Monitor Riser worldwide. You will get an email once our campaign is
+        completed.
+      </p>
+      <button class="btn-sucess" data-attributes="btn-got-it">Got it!</button>
     </div>
 
     <script src="js/app.js"></script>
